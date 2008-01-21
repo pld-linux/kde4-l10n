@@ -3,6 +3,14 @@
 #   lynx -dump ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n | awk '/.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
 #   and then :r out in vim and ./builder -a5 the spec
 
+# TODO
+# - add to glibc (?) LC_SCRIPTS dirs:
+#   /usr/share/locale/ga/LC_SCRIPTS/kdelibs4/kdelibs4.js
+#   /usr/share/locale/ja/LC_SCRIPTS/kdelibs4/kdelibs4.js
+#   /usr/share/locale/ja/LC_SCRIPTS/kgeography/kgeography.js
+#   /usr/share/locale/ko/LC_SCRIPTS/kdelibs4/kdelibs4.js
+#   /usr/share/locale/zh_CN/LC_SCRIPTS/kdelibs4/kdelibs4.js
+
 %define		_state		stable
 %define		_minlibsevr	9:%{version}
 
@@ -423,6 +431,14 @@ K Desktop Environment - Azerbaijani language support.
 
 %description Azerbaijani -l pl.UTF-8
 KDE - wsparcie dla języka azerskiego.
+
+%package Belarusian
+Summary:	K Desktop Environment - Belarusian language support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Belarusian
+K Desktop Environment - Belarusian language support.
 
 %package Bulgarian
 Summary:	K Desktop Environment - Bulgarian language support
@@ -964,6 +980,14 @@ K Desktop Environment - Low Saxon language support.
 %description Low_Saxon -l pl.UTF-8
 KDE - wsparcie dla języka dolnosaksońskiego.
 
+%package Nepali
+Summary:	K Desktop Environment - Nepali language support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Nepali
+K Desktop Environment - Nepali language support.
+
 %package Dutch
 Summary:	K Desktop Environment - Dutch language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka holenderskiego
@@ -1365,10 +1389,8 @@ if [ ! -f makeinstall.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	rm -rf makeinstall.stamp installed.stamp $RPM_BUILD_ROOT
 
 	for dir in kde-l10n-*-%{version}; do
-		%{__make} -C "$dir" install \
-			DESTDIR=$RPM_BUILD_ROOT \
-			kde_htmldir="%{_kdedocdir}" \
-			kde_libs_htmldir="%{_kdedocdir}"
+		%{__make} -C $dir install \
+			DESTDIR=$RPM_BUILD_ROOT
 	done
 	touch makeinstall.stamp
 fi
@@ -1376,27 +1398,6 @@ fi
 if [ ! -f installed.stamp ]; then
 	# remove empty language catalogs (= 1 message only)
 	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
-
-	# TODO: verify is this renaming ok
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.de{_DE,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.fr{_FR,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.de{_DE,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.fr{_FR,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/de{_DE,}
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/fr{_FR,}
-
-	# useless for the user
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/nb/README
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/se/ChangeLog
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/nbsp_gui_fr.txt
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/relecture_docs
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/relecture_gui
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/da/da.compendium
-
-	# junk
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/30x16.png
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/60x40.png
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/fa/COPYING
 
 	touch installed.stamp
 fi
@@ -1468,46 +1469,23 @@ FindLang() {
 		echo "%lang($lang) %{_datadir}/apps/kanagram/data/$lang"
 	fi
 
-	touch $lang.ok
-}
-
-%if 0
-# make symlinks relative
-for lang in $RPM_BUILD_ROOT%{_kdedocdir}/*; do
-	[ -d $lang ] || continue
-
-	if [ ! -d $lang/common ]; then
-		ln -s ../en/common $lang/common
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kvtml/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/kvtml/$lang"
 	fi
 
-	for i in $lang/*/*/*; do
-		if [ -d $i -a -L $i/common ]; then
-			rm -f $i/common
-			ln -sf ../../../common $i
-		fi
-	done
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$lang.soundtheme" ]; then
+		echo "%lang($lang) %{_datadir}/apps/ktuberling/sounds/$lang.soundtheme"
+	fi
 
-	for i in $lang/*/*; do
-		if [ -d $i -a -L $i/common ]; then
-			rm -f $i/common
-			ln -sf ../../common $i
-		fi
-	done
-
-	for i in $lang/*; do
-		if [ -d $i -a -L $i/common ]; then
-			rm -f $i/common
-			ln -sf ../common $i
-		fi
-	done
-done
-%endif
+	touch $lang.ok
+}
 
 rm -f *.lang *.cache __find.* *.ok
 
 FindLang af > Afrikaans.lang
 FindLang ar > Arabic.lang
 FindLang az > Azerbaijani.lang
+FindLang be > Belarusian.lang
 FindLang bg > Bulgarian.lang
 FindLang bn > Bengali.lang
 FindLang br > Breton.lang
@@ -1552,6 +1530,7 @@ FindLang ms > Malay.lang
 #FindLang mt > Maltese.lang
 FindLang nb > Norwegian_Bokmaal.lang
 FindLang nds > Low_Saxon.lang
+FindLang ne > Nepali.lang
 FindLang nl > Dutch.lang
 FindLang nn > Norwegian_Nynorsk.lang
 FindLang pa > Punjabi.lang
@@ -1631,6 +1610,9 @@ check_installed_files
 %defattr(644,root,root,755)
 
 %files -f Azerbaijani.lang Azerbaijani
+%defattr(644,root,root,755)
+
+%files -f Belarusian.lang Belarusian
 %defattr(644,root,root,755)
 
 %files -f Bulgarian.lang Bulgarian
@@ -1759,6 +1741,9 @@ check_installed_files
 %defattr(644,root,root,755)
 
 %files -f Low_Saxon.lang Low_Saxon
+%defattr(644,root,root,755)
+
+%files -f Nepali.lang Nepali
 %defattr(644,root,root,755)
 
 %files -f Dutch.lang Dutch
