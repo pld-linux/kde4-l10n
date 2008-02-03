@@ -12,7 +12,6 @@
 #   /usr/share/locale/zh_CN/LC_SCRIPTS/kdelibs4/kdelibs4.js
 
 %define		_state		stable
-%define		_minlibsevr	9:%{version}
 
 Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
@@ -111,7 +110,7 @@ Source42:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-zh_TW-%{v
 #Patch1:		%{name}-locale-names.patch
 BuildRequires:	cmake
 BuildRequires:	gettext-devel
-#BuildRequires:	kdelibs-devel
+BuildRequires:	kde4-kdelibs-devel
 #BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -124,283 +123,11 @@ K Desktop Environment - international support.
 %description -l pl.UTF-8
 KDE - wsparcie dla wielu języków.
 
-%package base
-Summary:	Empty metapackage to handle obsoletes
-Summary(pl.UTF-8):	Pusty metapakiet z obsoletes
-Group:		X11/Applications
-Obsoletes:	common-filemanagement-i18n
-Obsoletes:	kde-decoration-b2-i18n
-Obsoletes:	kde-decoration-cde-i18n
-Obsoletes:	kde-decoration-common-i18n
-Obsoletes:	kde-decoration-glow-i18n
-Obsoletes:	kde-decoration-icewm-i18n
-Obsoletes:	kde-decoration-kde1-i18n
-Obsoletes:	kde-decoration-kstep-i18n
-Obsoletes:	kde-decoration-modernsys-i18n
-Obsoletes:	kde-decoration-openlook-i18n
-Obsoletes:	kde-decoration-plastik-i18n
-Obsoletes:	kde-decoration-quartz-i18n
-Obsoletes:	kde-decoration-riscos-i18n
-Obsoletes:	kde-decoration-system-i18n
-Obsoletes:	kde-i18n-kdelibs
-Obsoletes:	kde-kgreet-classic-i18n
-Obsoletes:	kde-kio-imap4-i18n
-Obsoletes:	kde-kio-ldap-i18n
-Obsoletes:	kde-kio-newimap4-i18n
-Obsoletes:	kde-kio-nntp-i18n
-Obsoletes:	kde-kio-pop3-i18n
-Obsoletes:	kde-kio-smtp-i18n
-Obsoletes:	kde-style-plastik-i18n
-Obsoletes:	kdeaccessibility-i18n
-Obsoletes:	kdeaccessibility-kmag-i18n
-Obsoletes:	kdeaccessibility-kmousetool-i18n
-Obsoletes:	kdeaccessibility-kmouth-i18n
-Obsoletes:	kdeaddons-ark-i18n
-Obsoletes:	kdeaddons-atlantikdesigner-i18n
-Obsoletes:	kdeaddons-fsview-i18n
-Obsoletes:	kdeaddons-i18n
-Obsoletes:	kdeaddons-kaddressbook-i18n
-Obsoletes:	kdeaddons-kate-i18n
-Obsoletes:	kdeaddons-kicker-i18n
-Obsoletes:	kdeaddons-konqueror-i18n
-Obsoletes:	kdeaddons-kontact-i18n
-Obsoletes:	kdeaddons-ksig-i18n
-Obsoletes:	kdeaddons-kvim-i18n
-Obsoletes:	kdeaddons-lnkforward-i18n
-Obsoletes:	kdeaddons-noatun-i18n
-Obsoletes:	kdeadmin-i18n
-Obsoletes:	kdeadmin-kcmlilo-i18n
-Obsoletes:	kdeadmin-kcmlinuz-i18n
-Obsoletes:	kdeadmin-kcron-i18n
-Obsoletes:	kdeadmin-kdat-i18n
-Obsoletes:	kdeadmin-kpackage-i18n
-Obsoletes:	kdeadmin-ksysv-i18n
-Obsoletes:	kdeadmin-kuser-i18n
-Obsoletes:	kdeartwork-i18n
-Obsoletes:	kdeartwork-screensavers-i18n
-Obsoletes:	kdebase-common-filemanagement-i18n
-Obsoletes:	kdebase-core-i18n
-Obsoletes:	kdebase-desktop-i18n
-Obsoletes:	kdebase-desktop-libs-i18n
-Obsoletes:	kdebase-i18n
-Obsoletes:	kdebase-infocenter-i18n
-Obsoletes:	kdebase-kappfinder-i18n
-Obsoletes:	kdebase-kate-i18n
-Obsoletes:	kdebase-kdcop-i18n
-Obsoletes:	kdebase-kdeprintfax-i18n
-Obsoletes:	kdebase-kdialog-i18n
-Obsoletes:	kdebase-kfind-i18n
-Obsoletes:	kdebase-kfontinst-i18n
-Obsoletes:	kdebase-kicker-i18n
-Obsoletes:	kdebase-kicker-libs-i18n
-Obsoletes:	kdebase-kjobviewer-i18n
-Obsoletes:	kdebase-klipper-i18n
-Obsoletes:	kdebase-kmenuedit-i18n
-Obsoletes:	kdebase-konsole-i18n
-Obsoletes:	kdebase-kpager-i18n
-Obsoletes:	kdebase-kpersonalizer-i18n
-Obsoletes:	kdebase-ksysguard-i18n
-Obsoletes:	kdebase-ksystraycmd-i18n
-Obsoletes:	kdebase-kwrite-i18n
-Obsoletes:	kdebase-libkonq-i18n
-Obsoletes:	kdebase-mailnews-i18n
-Obsoletes:	kdebase-screensavers-i18n
-Obsoletes:	kdebase-useraccount-i18n
-Obsoletes:	kdeedu-flashkard-i18n
-Obsoletes:	kdeedu-i18n
-Obsoletes:	kdeedu-kalzium-i18n
-Obsoletes:	kdeedu-kbruch-i18n
-Obsoletes:	kdeedu-keduca-i18n
-Obsoletes:	kdeedu-khangman-i18n
-Obsoletes:	kdeedu-kig-i18n
-Obsoletes:	kdeedu-kiten-i18n
-Obsoletes:	kdeedu-klatin-i18n
-Obsoletes:	kdeedu-klettres-i18n
-Obsoletes:	kdeedu-kmessedwords-i18n
-Obsoletes:	kdeedu-kmplot-i18n
-Obsoletes:	kdeedu-kpercentage-i18n
-Obsoletes:	kdeedu-kstars-i18n
-Obsoletes:	kdeedu-ktouch-i18n
-Obsoletes:	kdeedu-kturtle-i18n
-Obsoletes:	kdeedu-kverbos-i18n
-Obsoletes:	kdeedu-kvoctrain-i18n
-Obsoletes:	kdeedu-kwordquiz-i18n
-Obsoletes:	kdegames-atlantik-i18n
-Obsoletes:	kdegames-i18n
-Obsoletes:	kdegames-kasteroids-i18n
-Obsoletes:	kdegames-katomic-i18n
-Obsoletes:	kdegames-kbackgammon-i18n
-Obsoletes:	kdegames-kbattleship-i18n
-Obsoletes:	kdegames-kblackbox-i18n
-Obsoletes:	kdegames-kbounce-i18n
-Obsoletes:	kdegames-kenolaba-i18n
-Obsoletes:	kdegames-kfouleggs-i18n
-Obsoletes:	kdegames-kgoldrunner-i18n
-Obsoletes:	kdegames-kjumpingcube-i18n
-Obsoletes:	kdegames-klickety-i18n
-Obsoletes:	kdegames-klines-i18n
-Obsoletes:	kdegames-kmahjongg-i18n
-Obsoletes:	kdegames-kmines-i18n
-Obsoletes:	kdegames-kolf-i18n
-Obsoletes:	kdegames-konquest-i18n
-Obsoletes:	kdegames-kpat-i18n
-Obsoletes:	kdegames-kpoker-i18n
-Obsoletes:	kdegames-kreversi-i18n
-Obsoletes:	kdegames-ksame-i18n
-Obsoletes:	kdegames-kshisen-i18n
-Obsoletes:	kdegames-ksirtet-i18n
-Obsoletes:	kdegames-ksmiletris-i18n
-Obsoletes:	kdegames-ksnake-i18n
-Obsoletes:	kdegames-ksokoban-i18n
-Obsoletes:	kdegames-kspaceduel-i18n
-Obsoletes:	kdegames-ktron-i18n
-Obsoletes:	kdegames-ktuberling-i18n
-Obsoletes:	kdegames-kwin4-i18n
-Obsoletes:	kdegames-lskat-i18n
-Obsoletes:	kdegames-megami-i18n
-Obsoletes:	kdegraphics-i18n
-Obsoletes:	kdegraphics-kamera-i18n
-Obsoletes:	kdegraphics-kcoloredit-i18n
-Obsoletes:	kdegraphics-kdvi-i18n
-Obsoletes:	kdegraphics-kfax-i18n
-Obsoletes:	kdegraphics-kfile-i18n
-Obsoletes:	kdegraphics-kgamma-i18n
-Obsoletes:	kdegraphics-kghostview-i18n
-Obsoletes:	kdegraphics-kiconedit-i18n
-Obsoletes:	kdegraphics-kmrml-i18n
-Obsoletes:	kdegraphics-kolourpaint-i18n
-Obsoletes:	kdegraphics-kooka-i18n
-Obsoletes:	kdegraphics-kpaint-i18n
-Obsoletes:	kdegraphics-kpdf-i18n
-Obsoletes:	kdegraphics-kpovmodeler-i18n
-Obsoletes:	kdegraphics-kruler-i18n
-Obsoletes:	kdegraphics-ksnapshot-i18n
-Obsoletes:	kdegraphics-ksvg-i18n
-Obsoletes:	kdegraphics-kuickshow-i18n
-Obsoletes:	kdegraphics-kview-i18n
-Obsoletes:	kdelibs-i18n
-Obsoletes:	kdemultimedia-arts-i18n
-Obsoletes:	kdemultimedia-artsbuilder-i18n
-Obsoletes:	kdemultimedia-artscontrol-i18n
-Obsoletes:	kdemultimedia-audiocd-i18n
-Obsoletes:	kdemultimedia-i18n
-Obsoletes:	kdemultimedia-juk-i18n
-Obsoletes:	kdemultimedia-kaboodle-i18n
-Obsoletes:	kdemultimedia-kaudiocreator-i18n
-Obsoletes:	kdemultimedia-kfile-i18n
-Obsoletes:	kdemultimedia-kmid-i18n
-Obsoletes:	kdemultimedia-kmix-i18n
-Obsoletes:	kdemultimedia-krec-i18n
-Obsoletes:	kdemultimedia-kscd-i18n
-Obsoletes:	kdemultimedia-libkcddb-i18n
-Obsoletes:	kdemultimedia-noatun-i18n
-Obsoletes:	kdenetwork-filesharing-i18n
-Obsoletes:	kdenetwork-i18n
-Obsoletes:	kdenetwork-kdict-i18n
-Obsoletes:	kdenetwork-kget-i18n
-Obsoletes:	kdenetwork-kinetd-i18n
-Obsoletes:	kdenetwork-knewsticker-i18n
-Obsoletes:	kdenetwork-kopete-i18n
-Obsoletes:	kdenetwork-kpf-i18n
-Obsoletes:	kdenetwork-kppp-i18n
-Obsoletes:	kdenetwork-krfb-i18n
-Obsoletes:	kdenetwork-ksirc-i18n
-Obsoletes:	kdenetwork-ktalkd-i18n
-Obsoletes:	kdenetwork-kwifimanager-i18n
-Obsoletes:	kdenetwork-lanbrowser-i18n
-Obsoletes:	kdenetwork-rss-i18n
-Obsoletes:	kdepim-i18n
-Obsoletes:	kdepim-i18n
-Obsoletes:	kdepim-kaddressbook-i18n
-Obsoletes:	kdepim-kandy-i18n
-Obsoletes:	kdepim-karm-i18n
-Obsoletes:	kdepim-kgantt-i18n
-Obsoletes:	kdepim-kmail-i18n
-Obsoletes:	kdepim-kmail-libs-i18n
-Obsoletes:	kdepim-knode-i18n
-Obsoletes:	kdepim-knotes-i18n
-Obsoletes:	kdepim-konsolekalendar-i18n
-Obsoletes:	kdepim-kontact-i18n
-Obsoletes:	kdepim-korganizer-i18n
-Obsoletes:	kdepim-korganizer-libs-i18n
-Obsoletes:	kdepim-korn-i18n
-Obsoletes:	kdepim-kpilot-i18n
-Obsoletes:	kdepim-ktnef-i18n
-Obsoletes:	kdepim-libkcal-i18n
-Obsoletes:	kdepim-libkdenetwork-i18n
-Obsoletes:	kdepim-libkdepim-i18n
-Obsoletes:	kdepim-libksieve-i18n
-Obsoletes:	kdepim-libs-i18n
-Obsoletes:	kdesdk-cervisia-i18n
-Obsoletes:	kdesdk-i18n
-Obsoletes:	kdesdk-kbabel-i18n
-Obsoletes:	kdesdk-kbugbuster-i18n
-Obsoletes:	kdesdk-kcachegrind-i18n
-Obsoletes:	kdesdk-kfile-i18n
-Obsoletes:	kdesdk-kfilereplace-i18n
-Obsoletes:	kdesdk-kompare-i18n
-Obsoletes:	kdesdk-kspy-i18n
-Obsoletes:	kdesdk-kstartperf-i18n
-Obsoletes:	kdesdk-kuiviewer-i18n
-Obsoletes:	kdesdk-libcvsservice-i18n
-Obsoletes:	kdesdk-spy-i18n
-Obsoletes:	kdesdk-umbrello-i18n
-Obsoletes:	kdetoys-amor-i18n
-Obsoletes:	kdetoys-fifteen-i18n
-Obsoletes:	kdetoys-i18n
-Obsoletes:	kdetoys-kmoon-i18n
-Obsoletes:	kdetoys-kodo-i18n
-Obsoletes:	kdetoys-kteatime-i18n
-Obsoletes:	kdetoys-ktux-i18n
-Obsoletes:	kdetoys-kweather-i18n
-Obsoletes:	kdetoys-kworldclock-i18n
-Obsoletes:	kdeutils-ark-i18n
-Obsoletes:	kdeutils-i18n
-Obsoletes:	kdeutils-kcalc-i18n
-Obsoletes:	kdeutils-kcharselect-i18n
-Obsoletes:	kdeutils-kdelirc-i18n
-Obsoletes:	kdeutils-kdepasswd-i18n
-Obsoletes:	kdeutils-kdessh-i18n
-Obsoletes:	kdeutils-kdf-i18n
-Obsoletes:	kdeutils-kedit-i18n
-Obsoletes:	kdeutils-kfloppy-i18n
-Obsoletes:	kdeutils-kgpg-i18n
-Obsoletes:	kdeutils-khexedit-i18n
-Obsoletes:	kdeutils-kjots-i18n
-Obsoletes:	kdeutils-klaptopdaemon-i18n
-Obsoletes:	kdeutils-kmilo-i18n
-Obsoletes:	kdeutils-kregexpeditor-i18n
-Obsoletes:	kdeutils-ksim-i18n
-Obsoletes:	kdeutils-ktimer-i18n
-Obsoletes:	kdeutils-kwalletmanager-i18n
-Obsoletes:	kdeutils-userinfo-i18n
-Obsoletes:	kdevelop-i18n
-Obsoletes:	kdewebdev-kfilereplace-i18n
-Obsoletes:	kdewebdev-kimagemapeditor-i18n
-Obsoletes:	kdewebdev-klinkstatus-i18n
-Obsoletes:	kdewebdev-kommander-i18n
-Obsoletes:	kdewebdev-kxsldbg-i18n
-Obsoletes:	kdewebdev-quanta-i18n
-Obsoletes:	kdm-i18n
-Obsoletes:	konqueror-i18n
-Obsoletes:	konqueror-libs-i18n
-Obsoletes:	quanta-i18n
-# sr@Latn vs. sr@latin
-Conflicts:	glibc-misc < 6:2.7
-
-%description base
-Empty metapackage to handle obsoletes for individual i18n subpackages.
-
-%description base -l pl.UTF-8
-Pusty metapakiet z Obsoletes dla oddzielnych podpakietów i18n.
-
 %package Afrikaans
 Summary:	K Desktop Environment - Afrikaans language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka afrykanerskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 # "Affrikaans" is here intentionally, to allow upgrade from misspelled packages
-Obsoletes:	kde-i18n-Affrikaans
 
 %description Afrikaans
 K Desktop Environment - Afrikaans language support.
@@ -412,7 +139,6 @@ KDE - wsparcie dla języka afrykanerskiego.
 Summary:	K Desktop Environment - Arabic language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka arabskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Arabic
 K Desktop Environment - Arabic language support.
@@ -424,7 +150,6 @@ KDE - wsparcie dla języka arabskiego.
 Summary:	K Desktop Environment - Azerbaijani language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka azerskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Azerbaijani
 K Desktop Environment - Azerbaijani language support.
@@ -435,7 +160,6 @@ KDE - wsparcie dla języka azerskiego.
 %package Belarusian
 Summary:	K Desktop Environment - Belarusian language support
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Belarusian
 K Desktop Environment - Belarusian language support.
@@ -444,7 +168,6 @@ K Desktop Environment - Belarusian language support.
 Summary:	K Desktop Environment - Bulgarian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bułgarskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Bulgarian
 K Desktop Environment - Bulgarian language support.
@@ -456,7 +179,6 @@ KDE - wsparcie dla języka bułgarskiego.
 Summary:	K Desktop Environment - Bengali language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bengalskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Bengali
 K Desktop Environment - Bengali language support.
@@ -468,7 +190,6 @@ KDE - wsparcie dla języka bengalskiego.
 Summary:	K Desktop Environment - Breton language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bretońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Breton
 K Desktop Environment - Breton language support.
@@ -480,7 +201,6 @@ KDE - wsparcie dla języka bretońskiego.
 Summary:	K Desktop Environment - Bosnian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bośniackiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Bosnian
 K Desktop Environment - Bosnian language support.
@@ -492,7 +212,6 @@ KDE - wsparcie dla języka bośniackiego.
 Summary:	K Desktop Environment - Catalan language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka katalońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Catalan
 K Desktop Environment - Catalan language support.
@@ -504,7 +223,6 @@ KDE - wsparcie dla języka katalońskiego.
 Summary:	K Desktop Environment - Czech language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka czeskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Czech
 K Desktop Environment - Czech language support.
@@ -516,7 +234,6 @@ KDE - wsparcie dla języka czeskiego.
 Summary:	K Desktop Environment - Kashubian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kaszubskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Kashubian
 K Desktop Environment - Kashubian language support.
@@ -528,7 +245,6 @@ KDE - wsparcie dla języka kaszubskiego.
 Summary:	K Desktop Environment - Cymraeg language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka walijskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Cymraeg
 K Desktop Environment - Cymraeg language support.
@@ -540,7 +256,6 @@ KDE - wsparcie dla języka walijskiego.
 Summary:	K Desktop Environment - Danish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka duńskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Danish
 K Desktop Environment - Danish language support.
@@ -552,7 +267,6 @@ KDE - wsparcie dla języka duńskiego.
 Summary:	K Desktop Environment - German language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka niemieckiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description German
 K Desktop Environment - German language support.
@@ -564,7 +278,6 @@ KDE - wsparcie dla języka niemieckiego.
 Summary:	K Desktop Environment - Greek language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka greckiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Greek
 K Desktop Environment - Greek language support.
@@ -576,7 +289,6 @@ KDE - wsparcie dla języka greckiego.
 Summary:	K Desktop Environment - English language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka angielskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description English
 K Desktop Environment - English language support.
@@ -588,7 +300,6 @@ KDE - wsparcie dla języka angielskiego.
 Summary:	K Desktop Environment - K Desktop Environment - English (UK) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka angielskiego (odmiany brytyjskiej)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description English_UK
 K Desktop Environment - English (UK) language support.
@@ -600,7 +311,6 @@ KDE - wsparcie dla języka angielskiego (odmiany brytyjskiej).
 Summary:	K Desktop Environment - Esperanto language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka esperanto
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Esperanto
 K Desktop Environment - Esperanto language support.
@@ -612,7 +322,6 @@ KDE - wsparcie dla języka esperanto.
 Summary:	K Desktop Environment - Spanish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka hiszpańskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Spanish
 K Desktop Environment - Spanish language support.
@@ -624,7 +333,6 @@ KDE - wsparcie dla języka hiszpańskiego.
 Summary:	K Desktop Environment - Estonian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka estońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Estonian
 K Desktop Environment - Estonian language support.
@@ -636,7 +344,6 @@ KDE - wsparcie dla języka estońskiego.
 Summary:	K Desktop Environment - Basque language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka baskijskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Basque
 K Desktop Environment - Basque language support.
@@ -648,7 +355,6 @@ KDE - wsparcie dla języka baskijskiego.
 Summary:	K Desktop Environment - Farsi language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka perskiego (farsi)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Farsi
 K Desktop Environment - Farsi language support.
@@ -660,7 +366,6 @@ KDE - wsparcie dla języka perskiego (farsi).
 Summary:	K Desktop Environment - Finnish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka fińskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Finnish
 K Desktop Environment - Finnish language support.
@@ -672,7 +377,6 @@ KDE - wsparcie dla języka fińskiego.
 Summary:	K Desktop Environment - French language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka francuskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description French
 K Desktop Environment - French language support.
@@ -684,7 +388,6 @@ KDE - wsparcie dla języka francuskiego.
 Summary:	K Desktop Environment - Frisian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka fryzyjskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Frisian
 K Desktop Environment - Frisian language support.
@@ -696,7 +399,6 @@ KDE - wsparcie dla języka fryzyjskiego.
 Summary:	K Desktop Environment - Irish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka irlandzkiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Irish
 K Desktop Environment - Irish language support.
@@ -708,7 +410,6 @@ KDE - wsparcie dla języka irlandzkiego.
 Summary:	K Desktop Environment - Galician language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka galicyjskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Galician
 K Desktop Environment - Galician language support.
@@ -720,7 +421,6 @@ KDE - wsparcie dla języka galicyjskiego.
 Summary:	K Desktop Environment - Hindi language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka hindi
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Hindi
 K Desktop Environment - Hindi language support.
@@ -732,7 +432,6 @@ KDE - wsparcie dla języka hindi.
 Summary:	K Desktop Environment - Hebrew language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka hebrajskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Hebrew
 K Desktop Environment - Hebrew language support.
@@ -744,7 +443,6 @@ KDE - wsparcie dla języka hebrajskiego.
 Summary:	K Desktop Environment - Croatian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka chorwackiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Croatian
 K Desktop Environment - Croatian language support.
@@ -756,7 +454,6 @@ KDE - wsparcie dla języka chorwackiego.
 Summary:	K Desktop Environment - Upper Sorbian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka górnołużyckiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Upper_Sorbian
 K Desktop Environment - Upper Sorbian language support.
@@ -768,7 +465,6 @@ KDE - wsparcie dla języka górnołużyckiego.
 Summary:	K Desktop Environment - Hungarian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka węgierskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Hungarian
 K Desktop Environment - Hungarian language support.
@@ -780,7 +476,6 @@ KDE - wsparcie dla języka węgierskiego.
 Summary:	K Desktop Environment - Indonesian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka indonezyjskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Indonesian
 K Desktop Environment - Indonesian language support.
@@ -792,7 +487,6 @@ KDE - wsparcie dla języka indonezyjskiego.
 Summary:	K Desktop Environment - Icelandic language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka islandzkiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Icelandic
 K Desktop Environment - Icelandic language support.
@@ -804,7 +498,6 @@ KDE - wsparcie dla języka islandzkiego.
 Summary:	K Desktop Environment - Italian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka włoskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Italian
 K Desktop Environment - Italian language support.
@@ -816,7 +509,6 @@ KDE - wsparcie dla języka włoskiego.
 Summary:	K Desktop Environment - Japanese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka japońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Japanese
 K Desktop Environment - Japanese language support.
@@ -828,7 +520,6 @@ KDE - wsparcie dla języka japońskiego.
 Summary:	K Desktop Environment - Kazakh language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kazaskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Kazakh
 K Desktop Environment - Kazakh language support.
@@ -840,7 +531,6 @@ KDE - wsparcie dla języka kazaskiego.
 Summary:	K Desktop Environment - Khmer language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka khmerskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Khmer
 K Desktop Environment - Khmer language support.
@@ -852,7 +542,6 @@ KDE - wsparcie dla języka khmerskiego.
 Summary:	K Desktop Environment - Kinyarwanda language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kinya-ruanda
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Kinyarwanda
 K Desktop Environment - Kinyarwanda language support.
@@ -864,7 +553,6 @@ KDE - wsparcie dla języka kinya-ruanda.
 Summary:	K Desktop Environment - Korean language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka koreańskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Korean
 K Desktop Environment - Korean language support.
@@ -876,7 +564,6 @@ KDE - wsparcie dla języka koreańskiego.
 Summary:	K Desktop Environment - Lithuanian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka litewskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Lithuanian
 K Desktop Environment - Lithuanian language support.
@@ -888,7 +575,6 @@ KDE - Wsparcie dla języka litewskiego.
 Summary:	K Desktop Environment - Lao language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka laotańskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Lao
 K Desktop Environment - lao language support.
@@ -900,7 +586,6 @@ KDE - wsparcie dla języka laotańskiego.
 Summary:	K Desktop Environment - Latvian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka łotewskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Latvian
 K Desktop Environment - Latvian language support.
@@ -912,7 +597,6 @@ KDE - wsparcie dla języka łotewskiego.
 Summary:	K Desktop Environment - Maori language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka maoryjskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Maori
 K Desktop Environment - Maori language support.
@@ -924,7 +608,6 @@ KDE - wsparcie dla języka maoryjskiego.
 Summary:	K Desktop Environment - Macedonian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka macedońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Macedonian
 K Desktop Environment - Macedonian language support.
@@ -936,7 +619,6 @@ KDE - wsparcie dla języka macedońskiego.
 Summary:	K Desktop Environment - Malay language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka malajskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Malay
 K Desktop Environment - Malay language support.
@@ -948,7 +630,6 @@ KDE - wsparcie dla języka malajskiego.
 Summary:	K Desktop Environment - Maltese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka maltańskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Maltese
 K Desktop Environment - Maltese language support.
@@ -960,7 +641,6 @@ KDE - wsparcie dla języka maltańskiego.
 Summary:	K Desktop Environment - Mongolian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka mongolskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Mongolian
 K Desktop Environment - Mongolian language support.
@@ -972,7 +652,6 @@ KDE - wsparcie dla języka mongolskiego.
 Summary:	K Desktop Environment - Low Saxon language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka dolnosaksońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Low_Saxon
 K Desktop Environment - Low Saxon language support.
@@ -983,7 +662,6 @@ KDE - wsparcie dla języka dolnosaksońskiego.
 %package Nepali
 Summary:	K Desktop Environment - Nepali language support
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Nepali
 K Desktop Environment - Nepali language support.
@@ -992,7 +670,6 @@ K Desktop Environment - Nepali language support.
 Summary:	K Desktop Environment - Dutch language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka holenderskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Dutch
 K Desktop Environment - Dutch language support.
@@ -1004,9 +681,7 @@ KDE - wsparcie dla języka holenderskiego.
 Summary:	K Desktop Environment - Norwegian (Bokmaal) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka norweskiego (odmiany bokmaal)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 # "Bookmal" is here intentionally, to allow upgrade from misspelled packages
-Obsoletes:	kde-i18n-Norwegian_Bookmal
 
 %description Norwegian_Bokmaal
 K Desktop Environment - Norwegian (Bokmaal) language support.
@@ -1018,7 +693,6 @@ KDE - wsparcie dla języka norweskiego (odmiany bokmaal).
 Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka norweskiego (odmiany nynorsk)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Norwegian_Nynorsk
 K Desktop Environment - Norwegian (Nynorsk) language support.
@@ -1030,7 +704,6 @@ KDE - wsparcie dla języka norweskiego (odmiany nynorsk).
 Summary:	K Desktop Environment - Northern Sotho language support
 Summary(pl.UTF-8):	KDE - wsparcie dla północnej odmiany języka ludu Soto
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Northern_Sotho
 K Desktop Environment - Northern Sotho language support.
@@ -1042,8 +715,6 @@ KDE - wsparcie dla północnej odmiany języka ludu Soto.
 Summary:	K Desktop Environment - Occitan (Gascon) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka oksytańskiego (dialektu gaskońskiego)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
-Obsoletes:	kde-i18n-Gascon_occitan
 
 %description Gascon_Occitan
 K Desktop Environment - Occitan (Gascon) language support.
@@ -1055,7 +726,6 @@ KDE - wsparcie dla języka oksytańskiego (dialektu gaskońskiego).
 Summary:	K Desktop Environment - Punjabi language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka pendżabskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Punjabi
 K Desktop Environment - Punjabi language support.
@@ -1067,7 +737,6 @@ KDE - wsparcie dla języka pendżabskiego.
 Summary:	K Desktop Environment - Polish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka polskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Polish
 K Desktop Environment - Polish language support.
@@ -1079,9 +748,6 @@ KDE - wsparcie dla języka polskiego.
 Summary:	K Desktop Environment - Portuguese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka portugalskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
-# "Portugnese" is here intentionally, to allow upgrade from misspelled packages
-Obsoletes:	kde-i18n-Portugnese
 
 %description Portuguese
 K Desktop Environment - Portuguese language support.
@@ -1093,9 +759,6 @@ KDE - wsparcie dla języka portugalskiego.
 Summary:	K Desktop Environment - Portuguese (Brazil) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
-# "Brazil_Protugnese" is here intentionally, to allow upgrade from misspelled packages
-Obsoletes:	kde-i18n-Brazil_Protugnese
 
 %description Brazil_Portuguese
 K Desktop Environment - Portuguese (Brazil) language support.
@@ -1107,7 +770,6 @@ KDE - wsparcie dla języka portugalskiego (odmiany brazylijskiej).
 Summary:	K Desktop Environment - Romanian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka rumuńskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Romanian
 K Desktop Environment - Romanian language support.
@@ -1119,7 +781,6 @@ KDE - wsparcie dla języka rumuńskiego.
 Summary:	K Desktop Environment - Russian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka rosyjskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Russian
 K Desktop Environment - Russian language support.
@@ -1131,7 +792,6 @@ KDE - wsparcie dla języka rosyjskiego.
 Summary:	K Desktop Environment - Swati language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka swati
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Swati
 K Desktop Environment - Swati language support.
@@ -1143,7 +803,6 @@ KDE - wsparcie dla języka swati.
 Summary:	K Desktop Environment - Northern Sami language support
 Summary(pl.UTF-8):	KDE - wsparcie dla północnego języka saami (lapońskiego)
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Northern_Sami
 K Desktop Environment - Northern Sami language support.
@@ -1155,7 +814,6 @@ KDE - wsparcie dla północnego języka saami (lapońskiego).
 Summary:	K Desktop Environment - Slovak language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka słowackiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Slovak
 K Desktop Environment - Slovak language support.
@@ -1167,7 +825,6 @@ KDE - wsparcie dla języka słowackiego.
 Summary:	K Desktop Environment - Slovenian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka słoweńskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Slovenian
 K Desktop Environment - Slovenian language support.
@@ -1179,7 +836,6 @@ KDE - wsparcie dla języka słoweńskiego.
 Summary:	K Desktop Environment - Serbian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka serbskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Serbian
 K Desktop Environment - Serbian language support.
@@ -1191,7 +847,6 @@ KDE - wsparcie dla języka serbskiego.
 Summary:	K Desktop Environment - Swedish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka szwedzkiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Swedish
 K Desktop Environment - Swedish language support.
@@ -1203,7 +858,6 @@ KDE - wsparcie dla języka szwedzkiego.
 Summary:	K Desktop Environment - Tajik language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tadżyckiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Tajik
 K Desktop Environment - Tajik language support.
@@ -1215,7 +869,6 @@ KDE - wsparcie dla języka tadżyckiego.
 Summary:	K Desktop Environment - Tamil language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tamilskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Tamil
 K Desktop Environment - Tamil language support.
@@ -1227,7 +880,6 @@ KDE - wsparcie dla języka tamilskiego.
 Summary:	K Desktop Environment - Telugu language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka telugu
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Telugu
 K Desktop Environment - Telugu language support.
@@ -1239,7 +891,6 @@ KDE - wsparcie dla języka telugu.
 Summary:	K Desktop Environment - Thai language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tajlandzkiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Thai
 K Desktop Environment - Thai language support.
@@ -1251,7 +902,6 @@ KDE - wsparcie dla języka tajlandzkiego.
 Summary:	K Desktop Environment - Turkish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tureckiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Turkish
 K Desktop Environment - Turkish language support.
@@ -1263,7 +913,6 @@ KDE - wsparcie dla języka tureckiego.
 Summary:	K Desktop Environment - Ukrainian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka ukraińskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Ukrainian
 K Desktop Environment - Ukrainian language support.
@@ -1275,7 +924,6 @@ KDE - wsparcie dla języka ukraińskiego.
 Summary:	K Desktop Environment - Uzbek language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka uzbeckiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Uzbek
 K Desktop Environment - Uzbek language support.
@@ -1287,7 +935,6 @@ KDE - wsparcie dla języka uzbeckiego.
 Summary:	K Desktop Environment - Venda language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka venda
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Venda
 K Desktop Environment - Venda language support.
@@ -1299,7 +946,6 @@ KDE - wsparcie dla języka venda.
 Summary:	K Desktop Environment - Vietnamese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka wietnamskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Vietnamese
 K Desktop Environment - Vietnamese language support.
@@ -1311,7 +957,6 @@ KDE - wsparcie dla języka wietnamskiego.
 Summary:	K Desktop Environment - Walloon language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka walońskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Walloon
 K Desktop Environment - Walloon language support.
@@ -1323,7 +968,6 @@ KDE - wsparcie dla języka walońskiego.
 Summary:	K Desktop Environment - Xhosa language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka khosa
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Xhosa
 K Desktop Environment - Xhosa language support.
@@ -1335,7 +979,6 @@ KDE - wsparcie dla języka khosa.
 Summary:	K Desktop Environment - simplified Chinese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla uproszczonego języka chińskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Simplified_Chinese
 K Desktop Environment - simplified Chinese language support.
@@ -1347,7 +990,6 @@ KDE - wsparcie dla uproszczonego języka chińskiego.
 Summary:	K Desktop Environment - Chinese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka chińskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Chinese
 K Desktop Environment - Chinese language support.
@@ -1359,7 +1001,6 @@ KDE - wsparcie dla języka chińskiego.
 Summary:	K Desktop Environment - Zulu language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka zuluskiego
 Group:		X11/Applications
-Requires:	%{name}-base = %{version}-%{release}
 
 %description Zulu
 K Desktop Environment - Zulu language support.
@@ -1599,9 +1240,6 @@ check_installed_files() {
 }
 check_installed_files
 %{!?debug:rm -rf $RPM_BUILD_ROOT}
-
-%files base
-%defattr(644,root,root,755)
 
 %files -f Afrikaans.lang Afrikaans
 %defattr(644,root,root,755)
