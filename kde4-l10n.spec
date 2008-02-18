@@ -4,7 +4,7 @@
 #   and then:r out in vim and ./builder -a5 the spec
 
 # TODO
-# - add to glibc (?) LC_SCRIPTS dirs:
+# - add LC_SCRIPTS (non-standard, KDE-specific category) dirs somewhere to KDE:
 #   /usr/share/locale/ga/LC_SCRIPTS/kdelibs4/kdelibs4.js
 #   /usr/share/locale/ja/LC_SCRIPTS/kdelibs4/kdelibs4.js
 #   /usr/share/locale/ja/LC_SCRIPTS/kgeography/kgeography.js
@@ -84,8 +84,8 @@ Source30:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-pl-%{vers
 # Source30-md5:	a0b889c00cf95d299720e5f3b4c42500
 Source31:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-pt-%{version}.tar.bz2
 # Source31-md5:	a8e87f9613e95521065d4ba5c65356e5
-# Source32-md5:	6eb426b92d668220bfceb910c0635e06
 Source32:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-pt_BR-%{version}.tar.bz2
+# Source32-md5:	6eb426b92d668220bfceb910c0635e06
 Source33:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-ru-%{version}.tar.bz2
 # Source33-md5:	4552842fc7b6dade6cbfa594c4b1e3d0
 Source34:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-se-%{version}.tar.bz2
@@ -106,8 +106,6 @@ Source41:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-zh_CN-%{v
 # Source41-md5:	0681d57cf706f192457fdcc1c8ab9e1f
 Source42:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-zh_TW-%{version}.tar.bz2
 # Source42-md5:	b8ef03bac64f7df7a4c95cb9d43da8e7
-#Patch0: %{name}-fa.patch
-#Patch1: %{name}-locale-names.patch
 BuildRequires:	cmake
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
@@ -127,7 +125,6 @@ KDE - wsparcie dla wielu języków.
 Summary:	K Desktop Environment - Afrikaans language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka afrykanerskiego
 Group:		X11/Applications
-# "Affrikaans" is here intentionally, to allow upgrade from misspelled packages
 
 %description Afrikaans
 K Desktop Environment - Afrikaans language support.
@@ -681,7 +678,6 @@ KDE - wsparcie dla języka holenderskiego.
 Summary:	K Desktop Environment - Norwegian (Bokmaal) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka norweskiego (odmiany bokmaal)
 Group:		X11/Applications
-# "Bookmal" is here intentionally, to allow upgrade from misspelled packages
 
 %description Norwegian_Bokmaal
 K Desktop Environment - Norwegian (Bokmaal) language support.
@@ -1010,8 +1006,6 @@ KDE - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -qcT %(seq -f '-a %g' 0 42 | xargs)
-#%patch0 -p1
-#%patch1 -p1
 
 %build
 for dir in kde-l10n-*-%{version}; do
