@@ -4,6 +4,7 @@
 #   and then:r out in vim and ./builder -a5 the spec
 
 # TODO
+# - pl for be(Belarusian), ne(Nepali)
 # - add LC_SCRIPTS (non-standard, KDE-specific category) dirs somewhere to KDE:
 #   /usr/share/locale/ga/LC_SCRIPTS/kdelibs4/kdelibs4.js
 #   /usr/share/locale/ja/LC_SCRIPTS/kdelibs4/kdelibs4.js
