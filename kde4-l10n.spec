@@ -4,7 +4,6 @@
 #   and then:r out in vim and ./builder -a5 the spec
 
 # TODO
-# - pl for be(Belarusian), ne(Nepali)
 # - add LC_SCRIPTS (non-standard, KDE-specific category) dirs somewhere to KDE:
 #   /usr/share/locale/ga/LC_SCRIPTS/kdelibs4/kdelibs4.js
 #   /usr/share/locale/ja/LC_SCRIPTS/kdelibs4/kdelibs4.js
@@ -157,10 +156,14 @@ KDE - wsparcie dla języka azerskiego.
 
 %package Belarusian
 Summary:	K Desktop Environment - Belarusian language support
+Summary(pl.UTF-8):	KDE - wsparcie dla języka białoruskiego
 Group:		X11/Applications
 
 %description Belarusian
 K Desktop Environment - Belarusian language support.
+
+%description Belarusian -l pl.UTF-8
+KDE - wsparcie dla języka białoruskiego.
 
 %package Bulgarian
 Summary:	K Desktop Environment - Bulgarian language support
@@ -659,10 +662,14 @@ KDE - wsparcie dla języka dolnosaksońskiego.
 
 %package Nepali
 Summary:	K Desktop Environment - Nepali language support
+Summary(pl.UTF-8):	KDE - wsparcie dla języka nepalskiego
 Group:		X11/Applications
 
 %description Nepali
 K Desktop Environment - Nepali language support.
+
+%description Nepali -l pl.UTF-8
+KDE - wsparcie dla języka nepalskiego.
 
 %package Dutch
 Summary:	K Desktop Environment - Dutch language support
