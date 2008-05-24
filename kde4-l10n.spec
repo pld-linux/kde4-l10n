@@ -19,7 +19,7 @@ Name:		kde4-l10n
 Version:	4.0.0
 Release:	0.1
 License:	GPL
-Group:		X11/Applications
+Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-ar-%{version}.tar.bz2
 # Source0-md5:	ed2c9eaeca75858171f7e0eb0b6dfaf8
 Source1:	ftp://ftp.kde.org/pub/kde/stable/4.0.0/src/kde-l10n/kde-l10n-be-%{version}.tar.bz2
@@ -124,7 +124,7 @@ KDE - wsparcie dla wielu języków.
 %package Afrikaans
 Summary:	K Desktop Environment - Afrikaans language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka afrykanerskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Afrikaans
 K Desktop Environment - Afrikaans language support.
@@ -135,7 +135,7 @@ KDE - wsparcie dla języka afrykanerskiego.
 %package Arabic
 Summary:	K Desktop Environment - Arabic language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka arabskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Arabic
 K Desktop Environment - Arabic language support.
@@ -146,7 +146,7 @@ KDE - wsparcie dla języka arabskiego.
 %package Azerbaijani
 Summary:	K Desktop Environment - Azerbaijani language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka azerskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Azerbaijani
 K Desktop Environment - Azerbaijani language support.
@@ -157,7 +157,7 @@ KDE - wsparcie dla języka azerskiego.
 %package Belarusian
 Summary:	K Desktop Environment - Belarusian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka białoruskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Belarusian
 K Desktop Environment - Belarusian language support.
@@ -168,7 +168,7 @@ KDE - wsparcie dla języka białoruskiego.
 %package Bulgarian
 Summary:	K Desktop Environment - Bulgarian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bułgarskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Bulgarian
 K Desktop Environment - Bulgarian language support.
@@ -179,7 +179,7 @@ KDE - wsparcie dla języka bułgarskiego.
 %package Bengali
 Summary:	K Desktop Environment - Bengali language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bengalskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Bengali
 K Desktop Environment - Bengali language support.
@@ -190,7 +190,7 @@ KDE - wsparcie dla języka bengalskiego.
 %package Breton
 Summary:	K Desktop Environment - Breton language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bretońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Breton
 K Desktop Environment - Breton language support.
@@ -201,7 +201,7 @@ KDE - wsparcie dla języka bretońskiego.
 %package Bosnian
 Summary:	K Desktop Environment - Bosnian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka bośniackiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Bosnian
 K Desktop Environment - Bosnian language support.
@@ -212,7 +212,7 @@ KDE - wsparcie dla języka bośniackiego.
 %package Catalan
 Summary:	K Desktop Environment - Catalan language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka katalońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Catalan
 K Desktop Environment - Catalan language support.
@@ -223,7 +223,7 @@ KDE - wsparcie dla języka katalońskiego.
 %package Czech
 Summary:	K Desktop Environment - Czech language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka czeskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Czech
 K Desktop Environment - Czech language support.
@@ -234,7 +234,7 @@ KDE - wsparcie dla języka czeskiego.
 %package Kashubian
 Summary:	K Desktop Environment - Kashubian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kaszubskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Kashubian
 K Desktop Environment - Kashubian language support.
@@ -245,7 +245,7 @@ KDE - wsparcie dla języka kaszubskiego.
 %package Cymraeg
 Summary:	K Desktop Environment - Cymraeg language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka walijskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Cymraeg
 K Desktop Environment - Cymraeg language support.
@@ -256,7 +256,7 @@ KDE - wsparcie dla języka walijskiego.
 %package Danish
 Summary:	K Desktop Environment - Danish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka duńskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Danish
 K Desktop Environment - Danish language support.
@@ -267,7 +267,7 @@ KDE - wsparcie dla języka duńskiego.
 %package German
 Summary:	K Desktop Environment - German language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka niemieckiego
-Group:		X11/Applications
+Group:		I18n
 
 %description German
 K Desktop Environment - German language support.
@@ -278,7 +278,7 @@ KDE - wsparcie dla języka niemieckiego.
 %package Greek
 Summary:	K Desktop Environment - Greek language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka greckiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Greek
 K Desktop Environment - Greek language support.
@@ -289,7 +289,7 @@ KDE - wsparcie dla języka greckiego.
 %package English
 Summary:	K Desktop Environment - English language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka angielskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description English
 K Desktop Environment - English language support.
@@ -300,7 +300,7 @@ KDE - wsparcie dla języka angielskiego.
 %package English_UK
 Summary:	K Desktop Environment - K Desktop Environment - English (UK) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka angielskiego (odmiany brytyjskiej)
-Group:		X11/Applications
+Group:		I18n
 
 %description English_UK
 K Desktop Environment - English (UK) language support.
@@ -311,7 +311,7 @@ KDE - wsparcie dla języka angielskiego (odmiany brytyjskiej).
 %package Esperanto
 Summary:	K Desktop Environment - Esperanto language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka esperanto
-Group:		X11/Applications
+Group:		I18n
 
 %description Esperanto
 K Desktop Environment - Esperanto language support.
@@ -322,7 +322,7 @@ KDE - wsparcie dla języka esperanto.
 %package Spanish
 Summary:	K Desktop Environment - Spanish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka hiszpańskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Spanish
 K Desktop Environment - Spanish language support.
@@ -333,7 +333,7 @@ KDE - wsparcie dla języka hiszpańskiego.
 %package Estonian
 Summary:	K Desktop Environment - Estonian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka estońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Estonian
 K Desktop Environment - Estonian language support.
@@ -344,7 +344,7 @@ KDE - wsparcie dla języka estońskiego.
 %package Basque
 Summary:	K Desktop Environment - Basque language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka baskijskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Basque
 K Desktop Environment - Basque language support.
@@ -355,7 +355,7 @@ KDE - wsparcie dla języka baskijskiego.
 %package Farsi
 Summary:	K Desktop Environment - Farsi language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka perskiego (farsi)
-Group:		X11/Applications
+Group:		I18n
 
 %description Farsi
 K Desktop Environment - Farsi language support.
@@ -366,7 +366,7 @@ KDE - wsparcie dla języka perskiego (farsi).
 %package Finnish
 Summary:	K Desktop Environment - Finnish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka fińskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Finnish
 K Desktop Environment - Finnish language support.
@@ -377,7 +377,7 @@ KDE - wsparcie dla języka fińskiego.
 %package French
 Summary:	K Desktop Environment - French language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka francuskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description French
 K Desktop Environment - French language support.
@@ -388,7 +388,7 @@ KDE - wsparcie dla języka francuskiego.
 %package Frisian
 Summary:	K Desktop Environment - Frisian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka fryzyjskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Frisian
 K Desktop Environment - Frisian language support.
@@ -399,7 +399,7 @@ KDE - wsparcie dla języka fryzyjskiego.
 %package Irish
 Summary:	K Desktop Environment - Irish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka irlandzkiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Irish
 K Desktop Environment - Irish language support.
@@ -410,7 +410,7 @@ KDE - wsparcie dla języka irlandzkiego.
 %package Galician
 Summary:	K Desktop Environment - Galician language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka galicyjskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Galician
 K Desktop Environment - Galician language support.
@@ -421,7 +421,7 @@ KDE - wsparcie dla języka galicyjskiego.
 %package Hindi
 Summary:	K Desktop Environment - Hindi language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka hindi
-Group:		X11/Applications
+Group:		I18n
 
 %description Hindi
 K Desktop Environment - Hindi language support.
@@ -432,7 +432,7 @@ KDE - wsparcie dla języka hindi.
 %package Hebrew
 Summary:	K Desktop Environment - Hebrew language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka hebrajskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Hebrew
 K Desktop Environment - Hebrew language support.
@@ -443,7 +443,7 @@ KDE - wsparcie dla języka hebrajskiego.
 %package Croatian
 Summary:	K Desktop Environment - Croatian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka chorwackiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Croatian
 K Desktop Environment - Croatian language support.
@@ -454,7 +454,7 @@ KDE - wsparcie dla języka chorwackiego.
 %package Upper_Sorbian
 Summary:	K Desktop Environment - Upper Sorbian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka górnołużyckiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Upper_Sorbian
 K Desktop Environment - Upper Sorbian language support.
@@ -465,7 +465,7 @@ KDE - wsparcie dla języka górnołużyckiego.
 %package Hungarian
 Summary:	K Desktop Environment - Hungarian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka węgierskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Hungarian
 K Desktop Environment - Hungarian language support.
@@ -476,7 +476,7 @@ KDE - wsparcie dla języka węgierskiego.
 %package Indonesian
 Summary:	K Desktop Environment - Indonesian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka indonezyjskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Indonesian
 K Desktop Environment - Indonesian language support.
@@ -487,7 +487,7 @@ KDE - wsparcie dla języka indonezyjskiego.
 %package Icelandic
 Summary:	K Desktop Environment - Icelandic language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka islandzkiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Icelandic
 K Desktop Environment - Icelandic language support.
@@ -498,7 +498,7 @@ KDE - wsparcie dla języka islandzkiego.
 %package Italian
 Summary:	K Desktop Environment - Italian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka włoskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Italian
 K Desktop Environment - Italian language support.
@@ -509,7 +509,7 @@ KDE - wsparcie dla języka włoskiego.
 %package Japanese
 Summary:	K Desktop Environment - Japanese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka japońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Japanese
 K Desktop Environment - Japanese language support.
@@ -520,7 +520,7 @@ KDE - wsparcie dla języka japońskiego.
 %package Kazakh
 Summary:	K Desktop Environment - Kazakh language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kazaskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Kazakh
 K Desktop Environment - Kazakh language support.
@@ -531,7 +531,7 @@ KDE - wsparcie dla języka kazaskiego.
 %package Khmer
 Summary:	K Desktop Environment - Khmer language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka khmerskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Khmer
 K Desktop Environment - Khmer language support.
@@ -542,7 +542,7 @@ KDE - wsparcie dla języka khmerskiego.
 %package Kinyarwanda
 Summary:	K Desktop Environment - Kinyarwanda language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kinya-ruanda
-Group:		X11/Applications
+Group:		I18n
 
 %description Kinyarwanda
 K Desktop Environment - Kinyarwanda language support.
@@ -553,7 +553,7 @@ KDE - wsparcie dla języka kinya-ruanda.
 %package Korean
 Summary:	K Desktop Environment - Korean language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka koreańskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Korean
 K Desktop Environment - Korean language support.
@@ -564,7 +564,7 @@ KDE - wsparcie dla języka koreańskiego.
 %package Lithuanian
 Summary:	K Desktop Environment - Lithuanian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka litewskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Lithuanian
 K Desktop Environment - Lithuanian language support.
@@ -575,7 +575,7 @@ KDE - Wsparcie dla języka litewskiego.
 %package Lao
 Summary:	K Desktop Environment - Lao language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka laotańskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Lao
 K Desktop Environment - lao language support.
@@ -586,7 +586,7 @@ KDE - wsparcie dla języka laotańskiego.
 %package Latvian
 Summary:	K Desktop Environment - Latvian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka łotewskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Latvian
 K Desktop Environment - Latvian language support.
@@ -597,7 +597,7 @@ KDE - wsparcie dla języka łotewskiego.
 %package Maori
 Summary:	K Desktop Environment - Maori language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka maoryjskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Maori
 K Desktop Environment - Maori language support.
@@ -608,7 +608,7 @@ KDE - wsparcie dla języka maoryjskiego.
 %package Macedonian
 Summary:	K Desktop Environment - Macedonian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka macedońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Macedonian
 K Desktop Environment - Macedonian language support.
@@ -619,7 +619,7 @@ KDE - wsparcie dla języka macedońskiego.
 %package Malay
 Summary:	K Desktop Environment - Malay language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka malajskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Malay
 K Desktop Environment - Malay language support.
@@ -630,7 +630,7 @@ KDE - wsparcie dla języka malajskiego.
 %package Maltese
 Summary:	K Desktop Environment - Maltese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka maltańskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Maltese
 K Desktop Environment - Maltese language support.
@@ -641,7 +641,7 @@ KDE - wsparcie dla języka maltańskiego.
 %package Mongolian
 Summary:	K Desktop Environment - Mongolian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka mongolskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Mongolian
 K Desktop Environment - Mongolian language support.
@@ -652,7 +652,7 @@ KDE - wsparcie dla języka mongolskiego.
 %package Low_Saxon
 Summary:	K Desktop Environment - Low Saxon language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka dolnosaksońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Low_Saxon
 K Desktop Environment - Low Saxon language support.
@@ -663,7 +663,7 @@ KDE - wsparcie dla języka dolnosaksońskiego.
 %package Nepali
 Summary:	K Desktop Environment - Nepali language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka nepalskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Nepali
 K Desktop Environment - Nepali language support.
@@ -674,7 +674,7 @@ KDE - wsparcie dla języka nepalskiego.
 %package Dutch
 Summary:	K Desktop Environment - Dutch language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka holenderskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Dutch
 K Desktop Environment - Dutch language support.
@@ -685,7 +685,7 @@ KDE - wsparcie dla języka holenderskiego.
 %package Norwegian_Bokmaal
 Summary:	K Desktop Environment - Norwegian (Bokmaal) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka norweskiego (odmiany bokmaal)
-Group:		X11/Applications
+Group:		I18n
 
 %description Norwegian_Bokmaal
 K Desktop Environment - Norwegian (Bokmaal) language support.
@@ -696,7 +696,7 @@ KDE - wsparcie dla języka norweskiego (odmiany bokmaal).
 %package Norwegian_Nynorsk
 Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka norweskiego (odmiany nynorsk)
-Group:		X11/Applications
+Group:		I18n
 
 %description Norwegian_Nynorsk
 K Desktop Environment - Norwegian (Nynorsk) language support.
@@ -707,7 +707,7 @@ KDE - wsparcie dla języka norweskiego (odmiany nynorsk).
 %package Northern_Sotho
 Summary:	K Desktop Environment - Northern Sotho language support
 Summary(pl.UTF-8):	KDE - wsparcie dla północnej odmiany języka ludu Soto
-Group:		X11/Applications
+Group:		I18n
 
 %description Northern_Sotho
 K Desktop Environment - Northern Sotho language support.
@@ -718,7 +718,7 @@ KDE - wsparcie dla północnej odmiany języka ludu Soto.
 %package Gascon_Occitan
 Summary:	K Desktop Environment - Occitan (Gascon) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka oksytańskiego (dialektu gaskońskiego)
-Group:		X11/Applications
+Group:		I18n
 
 %description Gascon_Occitan
 K Desktop Environment - Occitan (Gascon) language support.
@@ -729,7 +729,7 @@ KDE - wsparcie dla języka oksytańskiego (dialektu gaskońskiego).
 %package Punjabi
 Summary:	K Desktop Environment - Punjabi language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka pendżabskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Punjabi
 K Desktop Environment - Punjabi language support.
@@ -740,7 +740,7 @@ KDE - wsparcie dla języka pendżabskiego.
 %package Polish
 Summary:	K Desktop Environment - Polish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka polskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Polish
 K Desktop Environment - Polish language support.
@@ -751,7 +751,7 @@ KDE - wsparcie dla języka polskiego.
 %package Portuguese
 Summary:	K Desktop Environment - Portuguese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka portugalskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Portuguese
 K Desktop Environment - Portuguese language support.
@@ -762,7 +762,7 @@ KDE - wsparcie dla języka portugalskiego.
 %package Brazil_Portuguese
 Summary:	K Desktop Environment - Portuguese (Brazil) language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka portugalskiego (odmiany brazylijskiej)
-Group:		X11/Applications
+Group:		I18n
 
 %description Brazil_Portuguese
 K Desktop Environment - Portuguese (Brazil) language support.
@@ -773,7 +773,7 @@ KDE - wsparcie dla języka portugalskiego (odmiany brazylijskiej).
 %package Romanian
 Summary:	K Desktop Environment - Romanian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka rumuńskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Romanian
 K Desktop Environment - Romanian language support.
@@ -784,7 +784,7 @@ KDE - wsparcie dla języka rumuńskiego.
 %package Russian
 Summary:	K Desktop Environment - Russian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka rosyjskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Russian
 K Desktop Environment - Russian language support.
@@ -795,7 +795,7 @@ KDE - wsparcie dla języka rosyjskiego.
 %package Swati
 Summary:	K Desktop Environment - Swati language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka swati
-Group:		X11/Applications
+Group:		I18n
 
 %description Swati
 K Desktop Environment - Swati language support.
@@ -806,7 +806,7 @@ KDE - wsparcie dla języka swati.
 %package Northern_Sami
 Summary:	K Desktop Environment - Northern Sami language support
 Summary(pl.UTF-8):	KDE - wsparcie dla północnego języka saami (lapońskiego)
-Group:		X11/Applications
+Group:		I18n
 
 %description Northern_Sami
 K Desktop Environment - Northern Sami language support.
@@ -817,7 +817,7 @@ KDE - wsparcie dla północnego języka saami (lapońskiego).
 %package Slovak
 Summary:	K Desktop Environment - Slovak language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka słowackiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Slovak
 K Desktop Environment - Slovak language support.
@@ -828,7 +828,7 @@ KDE - wsparcie dla języka słowackiego.
 %package Slovenian
 Summary:	K Desktop Environment - Slovenian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka słoweńskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Slovenian
 K Desktop Environment - Slovenian language support.
@@ -839,7 +839,7 @@ KDE - wsparcie dla języka słoweńskiego.
 %package Serbian
 Summary:	K Desktop Environment - Serbian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka serbskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Serbian
 K Desktop Environment - Serbian language support.
@@ -850,7 +850,7 @@ KDE - wsparcie dla języka serbskiego.
 %package Swedish
 Summary:	K Desktop Environment - Swedish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka szwedzkiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Swedish
 K Desktop Environment - Swedish language support.
@@ -861,7 +861,7 @@ KDE - wsparcie dla języka szwedzkiego.
 %package Tajik
 Summary:	K Desktop Environment - Tajik language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tadżyckiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Tajik
 K Desktop Environment - Tajik language support.
@@ -872,7 +872,7 @@ KDE - wsparcie dla języka tadżyckiego.
 %package Tamil
 Summary:	K Desktop Environment - Tamil language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tamilskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Tamil
 K Desktop Environment - Tamil language support.
@@ -883,7 +883,7 @@ KDE - wsparcie dla języka tamilskiego.
 %package Telugu
 Summary:	K Desktop Environment - Telugu language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka telugu
-Group:		X11/Applications
+Group:		I18n
 
 %description Telugu
 K Desktop Environment - Telugu language support.
@@ -894,7 +894,7 @@ KDE - wsparcie dla języka telugu.
 %package Thai
 Summary:	K Desktop Environment - Thai language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tajlandzkiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Thai
 K Desktop Environment - Thai language support.
@@ -905,7 +905,7 @@ KDE - wsparcie dla języka tajlandzkiego.
 %package Turkish
 Summary:	K Desktop Environment - Turkish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tureckiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Turkish
 K Desktop Environment - Turkish language support.
@@ -916,7 +916,7 @@ KDE - wsparcie dla języka tureckiego.
 %package Ukrainian
 Summary:	K Desktop Environment - Ukrainian language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka ukraińskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Ukrainian
 K Desktop Environment - Ukrainian language support.
@@ -927,7 +927,7 @@ KDE - wsparcie dla języka ukraińskiego.
 %package Uzbek
 Summary:	K Desktop Environment - Uzbek language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka uzbeckiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Uzbek
 K Desktop Environment - Uzbek language support.
@@ -938,7 +938,7 @@ KDE - wsparcie dla języka uzbeckiego.
 %package Venda
 Summary:	K Desktop Environment - Venda language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka venda
-Group:		X11/Applications
+Group:		I18n
 
 %description Venda
 K Desktop Environment - Venda language support.
@@ -949,7 +949,7 @@ KDE - wsparcie dla języka venda.
 %package Vietnamese
 Summary:	K Desktop Environment - Vietnamese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka wietnamskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Vietnamese
 K Desktop Environment - Vietnamese language support.
@@ -960,7 +960,7 @@ KDE - wsparcie dla języka wietnamskiego.
 %package Walloon
 Summary:	K Desktop Environment - Walloon language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka walońskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Walloon
 K Desktop Environment - Walloon language support.
@@ -971,7 +971,7 @@ KDE - wsparcie dla języka walońskiego.
 %package Xhosa
 Summary:	K Desktop Environment - Xhosa language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka khosa
-Group:		X11/Applications
+Group:		I18n
 
 %description Xhosa
 K Desktop Environment - Xhosa language support.
@@ -982,7 +982,7 @@ KDE - wsparcie dla języka khosa.
 %package Simplified_Chinese
 Summary:	K Desktop Environment - simplified Chinese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla uproszczonego języka chińskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Simplified_Chinese
 K Desktop Environment - simplified Chinese language support.
@@ -993,7 +993,7 @@ KDE - wsparcie dla uproszczonego języka chińskiego.
 %package Chinese
 Summary:	K Desktop Environment - Chinese language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka chińskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Chinese
 K Desktop Environment - Chinese language support.
@@ -1004,7 +1004,7 @@ KDE - wsparcie dla języka chińskiego.
 %package Zulu
 Summary:	K Desktop Environment - Zulu language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka zuluskiego
-Group:		X11/Applications
+Group:		I18n
 
 %description Zulu
 K Desktop Environment - Zulu language support.
