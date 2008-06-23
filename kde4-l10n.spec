@@ -17,7 +17,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde4-l10n
 Version:	4.0.80
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ar-%{version}.tar.bz2
@@ -1065,6 +1065,7 @@ FindLang() {
 
 	# share/apps/amor/tips-(%%lang)
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$lang" ]; then
+		echo "%dir %{_datadir}/apps/amor"
 		echo "%lang($lang) %{_datadir}/apps/amor/tips-$lang"
 	fi
 
@@ -1075,45 +1076,59 @@ FindLang() {
 
 	# share/apps/ktuberling/sounds/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$lang" ]; then
+		#echo "%dir %{_datadir}/apps/ktuberling"
+		echo "%dir %{_datadir}/apps/ktuberling/sounds"
 		echo "%lang($lang) %{_datadir}/apps/ktuberling/sounds/$lang"
 	fi
 
 	# share/apps/khangman/(%lang).txt
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$lang.txt" ]; then
+		echo "%dir %{_datadir}/apps/khangman"
 		echo "%lang($lang) %{_datadir}/apps/khangman/$lang.txt"
 	fi
 
 	# share/apps/khangman/data/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$lang" ]; then
+		echo "%dir %{_datadir}/apps/khangman/data"
 		echo "%lang($lang) %{_datadir}/apps/khangman/data/$lang"
 	fi
 
 	# share/apps/klatin/data/vocabs/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$lang" ]; then
+		echo "%dir %{_datadir}/apps/klatin"
+		echo "%dir %{_datadir}/apps/klatin/data"
+		echo "%dir %{_datadir}/apps/klatin/data/vocabs"
 		echo "%lang($lang) %{_datadir}/apps/klatin/data/vocabs/$lang"
 	fi
 
 	# share/apps/klettres/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$lang" ]; then
+		echo "%dir %{_datadir}/apps/klettres"
 		echo "%lang($lang) %{_datadir}/apps/klettres/$lang"
 	fi
 
 	# share/apps/kturtle/data/logokeywords.(%lang).xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" ]; then
+		echo "%dir %{_datadir}/apps/kturtle"
+		echo "%dir %{_datadir}/apps/kturtle/data"
 		echo "%lang($lang) %{_datadir}/apps/kturtle/data/logokeywords.$lang.xml"
 	fi
 
 	# share/apps/kturtle/examples/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$lang" ]; then
+		echo "%dir %{_datadir}/apps/kturtle/examples"
 		echo "%lang($lang) %{_datadir}/apps/kturtle/examples/$lang"
 	fi
 
 	# share/apps/kanagram/data/et/elukutsed.kvtml
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kanagram/data/$lang" ]; then
+		echo "%dir %{_datadir}/apps/kanagram"
+		echo "%dir %{_datadir}/apps/kanagram/data"
 		echo "%lang($lang) %{_datadir}/apps/kanagram/data/$lang"
 	fi
 
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kvtml/$lang" ]; then
+		echo "%dir %{_datadir}/apps/kvtml"
 		echo "%lang($lang) %{_datadir}/apps/kvtml/$lang"
 	fi
 
