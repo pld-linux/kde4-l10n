@@ -1,0 +1,72 @@
+--- kde-l10n-pt-4.0.83/docs/kdeadmin/lilo-config/index.docbook	2008-06-18 18:29:47.000000000 +0200
++++ kde-l10n-pt-4.0.83/docs/kdeadmin/lilo-config/index.docbook-new	2008-06-25 01:30:09.659273000 +0200
+@@ -53,11 +53,20 @@
+ <holder
+ >&Virgil.J.Nisly;</holder>
+ </copyright>
+-
+-<para
+->Tradução de José Nuno Pires <email
++<othercredit role="translator"
++><firstname
++>José</firstname
++><surname
++>Pires</surname
++><affiliation
++><address
++><email
+ >jncp@netcabo.pt</email
+-></para
++></address
++></affiliation
++><contrib
++>Tradução</contrib
++></othercredit
+ > 
+ <legalnotice
+ >&FDLNotice;&underFDL;&GPLNotice;&underGPL;</legalnotice>
+@@ -132,7 +141,7 @@
+ ></term>
+ <listitem
+ ><para
+->Seleccione a unidade ou partição onde deseja instalar o gestor de arranque Lilo. A menos que pretenda usar outros gestores de arranque para além do &lilo;, este deverá ser o MBR ('master boot record' - registo-mestre de arranque) do seu disco de arranque. Neste caso, deverá provavelmente seleccionar o /dev/hda se a sua unidade for IDE e /dev/sda se o seu disco de arranque for SCSI.</para
++>Seleccione a unidade ou partição onde deseja instalar o gestor de arranque LILO. A menos que pretenda usar outros gestores de arranque para além do &lilo;, este deverá ser o MBR ('master boot record' - registo-mestre de arranque) do seu disco de arranque. Neste caso, deverá provavelmente seleccionar o /dev/hda se a sua unidade for IDE e /dev/sda se o seu disco de arranque for SCSI.</para
+ ></listitem>
+ </varlistentry>
+ <varlistentry>
+@@ -182,7 +191,7 @@
+ ></term>
+ <listitem
+ ><para
+->Só é necessária uma senha se alguns dos parâmetros foram alterados (i.e., o utilizador pode arrancar o 'linux', mas não o 'linux single' ou o 'linux init=/bin/sh'). Isto define um valor por omissão para todos os 'kernels' do &Linux; que deseja arrancar. Se necessitar de uma configuração por 'kernel', vá à página de Sistemas Operativos e seleccione os detalhes.</para
++>Só é necessária uma senha se alguns dos parâmetros foram alterados (i.e., o utilizador pode arrancar o 'linux', mas não o 'linux single' ou o 'linux init=/bin/sh'). Isto define um valor por omissão para todos os 'kernels' que deseja arrancar. Se necessitar de uma configuração por 'kernel', vá à página de Sistemas Operativos e seleccione os detalhes.</para
+ ></listitem>
+ </varlistentry>
+ <varlistentry>
+@@ -206,7 +215,7 @@
+ ></term>
+ <listitem
+ ><para
+->Pode seleccionar o modo gráfico por omissão aqui. Se pretender usar um modo gráfico VGA, deverá compilar o 'kernel' com o suporte para dispositivos de 'frame buffer'. A opção 'ask' mostra-lhe um menu no arranque. Permite atribuir um valor por omissão para todos os 'kernels' de &Linux; que deseja arrancar. Se precisar de uma configuração por 'kernel', vá à página de Sistemas Operativos e peça os detalhes.</para
++>Pode seleccionar o modo gráfico por omissão aqui. Se pretender usar um modo gráfico VGA, deverá compilar o 'kernel' com o suporte para dispositivos de 'frame buffer'. A opção 'ask' mostra-lhe um menu no arranque. Permite atribuir um valor por omissão para todos os 'kernels' de Linux que deseja arrancar. Se precisar de uma configuração por 'kernel', vá à página de Sistemas Operativos e peça os detalhes.</para
+ ></listitem>
+ </varlistentry>
+ <varlistentry>
+@@ -347,7 +356,7 @@
+ ></term>
+ <listitem
+ ><para
+->Adiciona um novo 'kernel' de &Linux; ao menu de arranque.</para
++>Adiciona um novo 'kernel' de Linux ao menu de arranque.</para
+ ></listitem>
+ </varlistentry>
+ <varlistentry>
+@@ -357,7 +366,7 @@
+ ></term>
+ <listitem
+ ><para
+->Adiciona um SO não-&Linux; ao menu de arranque.</para
++>Adiciona um SO não-Linux ao menu de arranque.</para
+ ></listitem>
+ </varlistentry>
+ <varlistentry>
