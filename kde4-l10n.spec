@@ -106,6 +106,7 @@ Source41:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-z
 # Source41-md5:	dc3456feebcd6d7ac748cb89bb87c44f
 Source42:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-zh_TW-%{version}.tar.bz2
 # Source42-md5:	2edb0fa7dafed91b761c650a881f3106
+Patch0:		%{name}-pt_backward.patch
 BuildRequires:	cmake
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
@@ -1014,6 +1015,7 @@ KDE - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -qcT %(seq -f '-a %g' 0 42 | xargs)
+%patch0 -p0
 
 %build
 for dir in kde-l10n-*-%{version}; do
