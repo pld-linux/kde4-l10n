@@ -569,14 +569,14 @@ KDE - wsparcie dla języka koreańskiego.
 
 %package Kurdish
 Summary:        K Desktop Environment - Kurdish language support
-Summary(pl.UTF-8):      KDE - wsparcie dla języka kurdyńskiego
+Summary(pl.UTF-8):      KDE - wsparcie dla języka kurdyjskiego
 Group:          I18n
 
 %description Korean
 K Desktop Environment - Kurdish language support.
 
 %description Kurdish -l pl.UTF-8
-KDE - wsparcie dla języka kurdyńskiego.
+KDE - wsparcie dla języka kurdyjskiego.
 
 %package Lithuanian
 Summary:	K Desktop Environment - Lithuanian language support
@@ -635,14 +635,14 @@ KDE - wsparcie dla języka macedońskiego.
 
 %package Malayalam
 Summary:	K Desktop Environment - Malayalam language support
-Summary(pl.UTF-8):	KDE - wsparcie dla języka malajskiego
+Summary(pl.UTF-8):	KDE - wsparcie dla języka malajalam
 Group:		I18n
 
 %description Malayalam
 K Desktop Environment - Malayalam language support.
 
 %description Malayalam -l pl.UTF-8
-KDE - wsparcie dla języka malajskiego.
+KDE - wsparcie dla języka malajalam.
 
 %package Maltese
 Summary:	K Desktop Environment - Maltese language support
