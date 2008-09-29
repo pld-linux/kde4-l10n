@@ -1038,7 +1038,7 @@ for dir in kde-l10n-*-%{version}; do
 	cd $dir
 	%cmake \
 		-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-		-DCMAKE_VERBOSE_MAKEFILE=1 \
+		-DCMAKE_VERBOSE_MAKEFILE=ON \
 		-DSYSCONF_INSTALL_DIR=%{_sysconfdir} \
 		.
 	%{__make}
