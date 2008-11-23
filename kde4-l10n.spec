@@ -112,10 +112,12 @@ Source44:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-z
 # Source44-md5:	48aef075bef64f8d57ba124620a17eaa
 Source45:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-zh_TW-%{version}.tar.bz2
 # Source45-md5:	7ef18fe5d0fee8252ff0f1186b2f8a4f
+BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
-BuildRequires:	automoc4
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
 #BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
