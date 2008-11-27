@@ -17,7 +17,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde4-l10n
 Version:	4.1.80
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-bg-%{version}.tar.bz2
@@ -1129,14 +1129,14 @@ FindLang() {
 
 	# share/apps/kturtle/data/logokeywords.(%lang).xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" ]; then
-	#	echo "%dir %{_datadir}/apps/kturtle"
-	#	echo "%dir %{_datadir}/apps/kturtle/data"
+		echo "%dir %{_datadir}/apps/kturtle"
+		echo "%dir %{_datadir}/apps/kturtle/data"
 		echo "%lang($lang) %{_datadir}/apps/kturtle/data/logokeywords.$lang.xml"
 	fi
 
 	# share/apps/kturtle/examples/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$lang" ]; then
-	#	echo "%dir %{_datadir}/apps/kturtle/examples"
+		echo "%dir %{_datadir}/apps/kturtle/examples"
 		echo "%lang($lang) %{_datadir}/apps/kturtle/examples/$lang"
 	fi
 
@@ -1148,7 +1148,7 @@ FindLang() {
 	fi
 
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kvtml/$lang" ]; then
-	#	echo "%dir %{_datadir}/apps/kvtml"
+		echo "%dir %{_datadir}/apps/kvtml"
 		echo "%lang($lang) %{_datadir}/apps/kvtml/$lang"
 	fi
 
@@ -1417,9 +1417,6 @@ check_installed_files
 
 %files -f Macedonian.lang Macedonian
 %defattr(644,root,root,755)
-
-#%files -f Malay.lang Malay
-#%defattr(644,root,root,755)
 
 %files -f Malayalam.lang Malayalam
 %defattr(644,root,root,755)
