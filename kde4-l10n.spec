@@ -1129,14 +1129,14 @@ FindLang() {
 
 	# share/apps/kturtle/data/logokeywords.(%lang).xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" ]; then
-		echo "%dir %{_datadir}/apps/kturtle"
-		echo "%dir %{_datadir}/apps/kturtle/data"
+	#	echo "%dir %{_datadir}/apps/kturtle"
+	#	echo "%dir %{_datadir}/apps/kturtle/data"
 		echo "%lang($lang) %{_datadir}/apps/kturtle/data/logokeywords.$lang.xml"
 	fi
 
 	# share/apps/kturtle/examples/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$lang" ]; then
-		echo "%dir %{_datadir}/apps/kturtle/examples"
+	#	echo "%dir %{_datadir}/apps/kturtle/examples"
 		echo "%lang($lang) %{_datadir}/apps/kturtle/examples/$lang"
 	fi
 
@@ -1148,7 +1148,7 @@ FindLang() {
 	fi
 
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kvtml/$lang" ]; then
-		echo "%dir %{_datadir}/apps/kvtml"
+	#	echo "%dir %{_datadir}/apps/kvtml"
 		echo "%lang($lang) %{_datadir}/apps/kvtml/$lang"
 	fi
 
@@ -1207,7 +1207,7 @@ FindLang lv > Latvian.lang
 FindLang mk > Macedonian.lang
 FindLang ml > Malayalam.lang 
 FindLang mn > Mongolian.lang
-FindLang ms > Malay.lang
+#FindLang ms > Malay.lang
 #FindLang mt > Maltese.lang
 FindLang nb > Norwegian_Bokmaal.lang
 FindLang nds > Low_Saxon.lang
@@ -1417,6 +1417,9 @@ check_installed_files
 
 %files -f Macedonian.lang Macedonian
 %defattr(644,root,root,755)
+
+#%files -f Malay.lang Malay
+#%defattr(644,root,root,755)
 
 %files -f Malayalam.lang Malayalam
 %defattr(644,root,root,755)
