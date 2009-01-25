@@ -10,12 +10,6 @@
 #   /usr/share/locale/ja/LC_SCRIPTS/kgeography/kgeography.js
 #   /usr/share/locale/ko/LC_SCRIPTS/kdelibs4/kdelibs4.js
 #   /usr/share/locale/zh_CN/LC_SCRIPTS/kdelibs4/kdelibs4.js
-#Source8:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-eo-%{version}.tar.bz2
-# Source8-md5:	59f6247d771d39abc48ec803cc0a1cfa
-#Source13:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-fy-%{version}.tar.bz2
-# Source13-md5:	e5046259747f18c9d017f3606eda444c
-#Source39:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ta-%{version}.tar.bz2
-# Source39-md5:	586ccb6fa1f2ef63aa1823c57201feb1
 
 %define		_state		unstable
 
@@ -45,7 +39,7 @@ Source7:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-en
 Source8:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-es-%{version}.tar.bz2
 # Source8-md5:	e3b9bc8ef5573f7574e296385eb130a9
 Source9:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-et-%{version}.tar.bz2
-# Source9-md5:	94b1a109b75d7bca66a3f26b0b3b61c1
+# Source9-md5:	fb2e1d63d9d926c6639a537b6bf73d03
 Source10:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-fi-%{version}.tar.bz2
 # Source10-md5:	dc5bda4589b9a2042ade700caf8de083
 Source11:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-fr-%{version}.tar.bz2
