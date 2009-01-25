@@ -17,7 +17,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde4-l10n
 Version:	4.2.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-bg-%{version}.tar.bz2
@@ -1322,8 +1322,8 @@ check_installed_files
 %files -f English_UK.lang English_UK
 %defattr(644,root,root,755)
 
-%files -f Esperanto.lang Esperanto
-%defattr(644,root,root,755)
+#%files -f Esperanto.lang Esperanto
+#%defattr(644,root,root,755)
 
 %files -f Spanish.lang Spanish
 %defattr(644,root,root,755)
@@ -1343,8 +1343,8 @@ check_installed_files
 %files -f French.lang French
 %defattr(644,root,root,755)
 
-%files -f Frisian.lang Frisian
-%defattr(644,root,root,755)
+#%files -f Frisian.lang Frisian
+#%defattr(644,root,root,755)
 
 %files -f Irish.lang Irish
 %defattr(644,root,root,755)
@@ -1470,8 +1470,8 @@ check_installed_files
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
 
-%files -f Tamil.lang Tamil
-%defattr(644,root,root,755)
+#%files -f Tamil.lang Tamil
+#%defattr(644,root,root,755)
 
 %files -f Telugu.lang Telugu
 %defattr(644,root,root,755)
