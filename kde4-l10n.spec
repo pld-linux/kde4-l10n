@@ -110,9 +110,10 @@ BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
+#BuildRequires:	libxml2-progs >= 2.4.2
+BuildRequires:	perl-modules
 BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
-#BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -462,7 +463,7 @@ Group:		I18n
 %description Upper_Sorbian
 K Desktop Environment - Upper Sorbian language support.
 
-%description Upper_Sorbian  -l pl.UTF-8
+%description Upper_Sorbian -l pl.UTF-8
 KDE - wsparcie dla języka górnołużyckiego.
 
 %package Hungarian
@@ -565,9 +566,9 @@ K Desktop Environment - Korean language support.
 KDE - wsparcie dla języka koreańskiego.
 
 %package Kurdish
-Summary:        K Desktop Environment - Kurdish language support
-Summary(pl.UTF-8):      KDE - wsparcie dla języka kurdyjskiego
-Group:          I18n
+Summary:	K Desktop Environment - Kurdish language support
+Summary(pl.UTF-8):	KDE - wsparcie dla języka kurdyjskiego
+Group:		I18n
 
 %description Korean
 K Desktop Environment - Kurdish language support.
@@ -1200,7 +1201,7 @@ FindLang lt > Lithuanian.lang
 FindLang lv > Latvian.lang
 #FindLang mi > Maori.lang
 FindLang mk > Macedonian.lang
-FindLang ml > Malayalam.lang 
+FindLang ml > Malayalam.lang
 FindLang mn > Mongolian.lang
 #FindLang ms > Malay.lang
 #FindLang mt > Maltese.lang
