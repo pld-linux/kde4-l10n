@@ -16,7 +16,7 @@
 Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde4-l10n
-Version:	4.3.5
+Version:	4.4.0
 Release:	1
 License:	GPL
 Group:		I18n
