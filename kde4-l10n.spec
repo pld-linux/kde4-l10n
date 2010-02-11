@@ -1389,8 +1389,8 @@ check_installed_files
 %files -f Korean.lang Korean
 %defattr(644,root,root,755)
 
-%files -f Kurdish.lang Kurdish
-%defattr(644,root,root,755)
+#%files -f Kurdish.lang Kurdish
+#%defattr(644,root,root,755)
 
 %files -f Kashubian.lang Kashubian
 %defattr(644,root,root,755)
@@ -1478,8 +1478,8 @@ check_installed_files
 %files -f Telugu.lang Telugu
 %defattr(644,root,root,755)
 
-%files -f Thai.lang Thai
-%defattr(644,root,root,755)
+#%files -f Thai.lang Thai
+#%defattr(644,root,root,755)
 
 %files -f Turkish.lang Turkish
 %defattr(644,root,root,755)
