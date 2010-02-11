@@ -1196,7 +1196,7 @@ FindLang ja > Japanese.lang
 FindLang kk > Kazakh.lang
 FindLang km > Khmer.lang
 FindLang ko > Korean.lang
-FindLang ku > Kurdish.lang
+#FindLang ku > Kurdish.lang
 FindLang lt > Lithuanian.lang
 FindLang lv > Latvian.lang
 #FindLang mi > Maori.lang
@@ -1229,7 +1229,7 @@ FindLang sv > Swedish.lang
 #FindLang ta > Tamil.lang
 FindLang te > Telugu.lang
 FindLang tg > Tajik.lang
-FindLang th > Thai.lang
+#FindLang th > Thai.lang
 FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
