@@ -1028,7 +1028,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla języka zuluskiego.
 
 %prep
-%setup -qcT %(seq -f '-a %g' 0 42 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 42 |sed -e 's/-a 20//;s/-a 37//;/^$/d' | xargs)
 
 %build
 for dir in kde-l10n-*-%{version}; do
