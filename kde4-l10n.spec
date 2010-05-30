@@ -1304,6 +1304,10 @@ check_installed_files
 
 %files -f Catalan.lang Catalan
 %defattr(644,root,root,755)
+%{_mandir}/ca/man1/*.1*
+%{_mandir}/ca/man6/*.6*
+%{_mandir}/ca/man7/*.7*
+%{_mandir}/ca/man8/*.8*
 
 %files -f Czech.lang Czech
 %defattr(644,root,root,755)
@@ -1313,9 +1317,15 @@ check_installed_files
 
 %files -f Danish.lang Danish
 %defattr(644,root,root,755)
+%{_mandir}/da/man1/*.1*
+%{_mandir}/da/man6/*.6*
 
 %files -f German.lang German
 %defattr(644,root,root,755)
+%{_mandir}/de/man1/*.1*
+%{_mandir}/de/man6/*.6*
+%{_mandir}/de/man7/*.7*
+%{_mandir}/de/man8/*.8*
 
 %files -f Greek.lang Greek
 %defattr(644,root,root,755)
@@ -1330,9 +1340,17 @@ check_installed_files
 
 %files -f Spanish.lang Spanish
 %defattr(644,root,root,755)
+%{_mandir}/es/man1/*.1*
+%{_mandir}/es/man6/*.6*
+%{_mandir}/es/man7/*.7*
+%{_mandir}/es/man8/*.8*
 
 %files -f Estonian.lang Estonian
 %defattr(644,root,root,755)
+%{_mandir}/et/man1/*.1*
+%{_mandir}/et/man6/*.6*
+%{_mandir}/et/man7/*.7*
+%{_mandir}/et/man8/*.8*
 
 %files -f Basque.lang Basque
 %defattr(644,root,root,755)
@@ -1345,6 +1363,9 @@ check_installed_files
 
 %files -f French.lang French
 %defattr(644,root,root,755)
+%{_mandir}/fr/man1/*.1*
+%{_mandir}/fr/man6/*.6*
+%{_mandir}/fr/man8/*.8*
 
 #%files -f Frisian.lang Frisian
 #%defattr(644,root,root,755)
@@ -1354,6 +1375,10 @@ check_installed_files
 
 %files -f Galician.lang Galician
 %defattr(644,root,root,755)
+%{_mandir}/gl/man1/*.1*
+%{_mandir}/gl/man6/*.6*
+%{_mandir}/gl/man7/*.7*
+%{_mandir}/gl/man8/*.8*
 
 %files -f Hindi.lang Hindi
 %defattr(644,root,root,755)
@@ -1377,6 +1402,10 @@ check_installed_files
 
 %files -f Italian.lang Italian
 %defattr(644,root,root,755)
+%{_mandir}/it/man1/*.1*
+%{_mandir}/it/man6/*.6*
+%{_mandir}/it/man7/*.7*
+%{_mandir}/it/man8/*.8*
 
 %files -f Japanese.lang Japanese
 %defattr(644,root,root,755)
@@ -1426,9 +1455,13 @@ check_installed_files
 
 %files -f Dutch.lang Dutch
 %defattr(644,root,root,755)
+%{_mandir}/nl/man1/*.1*
+%{_mandir}/nl/man6/*.6*
+%{_mandir}/nl/man8/*.8*
 
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
 %defattr(644,root,root,755)
+%{_mandir}/nb/man1/*.1*
 
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %defattr(644,root,root,755)
@@ -1442,18 +1475,31 @@ check_installed_files
 
 %files -f Polish.lang Polish
 %defattr(644,root,root,755)
+%{_mandir}/pl/man1/*.1*
+%{_mandir}/pl/man6/*.6*
+%{_mandir}/pl/man8/*.8*
 
 %files -f Portuguese.lang Portuguese
 %defattr(644,root,root,755)
+%{_mandir}/pt/man1/*.1*
+%{_mandir}/pt/man6/*.6*
+%{_mandir}/pt/man7/*.7*
+%{_mandir}/pt/man8/*.8*
 
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
 %defattr(644,root,root,755)
+%{_mandir}/pt_BR/man1/*.1*
+%{_mandir}/pt_BR/man6/*.6*
+%{_mandir}/pt_BR/man7/*.7*
+%{_mandir}/pt_BR/man8/*.8*
 
 %files -f Romanian.lang Romanian
 %defattr(644,root,root,755)
 
 %files -f Russian.lang Russian
 %defattr(644,root,root,755)
+%{_mandir}/ru/man1/*.1*
+%{_mandir}/ru/man6/*.6*
 
 %files -f Northern_Sami.lang Northern_Sami
 %defattr(644,root,root,755)
@@ -1469,9 +1515,14 @@ check_installed_files
 
 %files -f Serbian.lang Serbian
 %defattr(644,root,root,755)
+%{_mandir}/sr/man1/*.1*
 
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
+%{_mandir}/sv/man1/*.1*
+%{_mandir}/sv/man6/*.6*
+%{_mandir}/sv/man7/*.7*
+%{_mandir}/sv/man8/*.8*
 
 #%files -f Tamil.lang Tamil
 #%defattr(644,root,root,755)
@@ -1490,6 +1541,10 @@ check_installed_files
 
 %files -f Ukrainian.lang Ukrainian
 %defattr(644,root,root,755)
+%{_mandir}/uk/man1/*.1*
+%{_mandir}/uk/man6/*.6*
+%{_mandir}/uk/man7/*.7*
+%{_mandir}/uk/man8/*.8*
 
 %files -f Uzbek.lang Uzbek
 %defattr(644,root,root,755)
