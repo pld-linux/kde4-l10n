@@ -1378,7 +1378,7 @@ check_installed_files
 %{_mandir}/gl/man1/*.1*
 %{_mandir}/gl/man6/*.6*
 %{_mandir}/gl/man7/*.7*
-%{_mandir}/gl/man8/*.8*
+#%{_mandir}/gl/man8/*.8*
 
 %files -f Hindi.lang Hindi
 %defattr(644,root,root,755)
@@ -1475,31 +1475,31 @@ check_installed_files
 
 %files -f Polish.lang Polish
 %defattr(644,root,root,755)
-%{_mandir}/pl/man1/*.1*
-%{_mandir}/pl/man6/*.6*
-%{_mandir}/pl/man8/*.8*
+#%{_mandir}/pl/man1/*.1*
+#%{_mandir}/pl/man6/*.6*
+#%{_mandir}/pl/man8/*.8*
 
 %files -f Portuguese.lang Portuguese
 %defattr(644,root,root,755)
-%{_mandir}/pt/man1/*.1*
-%{_mandir}/pt/man6/*.6*
-%{_mandir}/pt/man7/*.7*
-%{_mandir}/pt/man8/*.8*
+#%{_mandir}/pt/man1/*.1*
+#%{_mandir}/pt/man6/*.6*
+#%{_mandir}/pt/man7/*.7*
+#%{_mandir}/pt/man8/*.8*
 
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
 %defattr(644,root,root,755)
-%{_mandir}/pt_BR/man1/*.1*
-%{_mandir}/pt_BR/man6/*.6*
-%{_mandir}/pt_BR/man7/*.7*
-%{_mandir}/pt_BR/man8/*.8*
+#%{_mandir}/pt_BR/man1/*.1*
+#%{_mandir}/pt_BR/man6/*.6*
+#%{_mandir}/pt_BR/man7/*.7*
+#%{_mandir}/pt_BR/man8/*.8*
 
 %files -f Romanian.lang Romanian
 %defattr(644,root,root,755)
 
 %files -f Russian.lang Russian
 %defattr(644,root,root,755)
-%{_mandir}/ru/man1/*.1*
-%{_mandir}/ru/man6/*.6*
+#%{_mandir}/ru/man1/*.1*
+#%{_mandir}/ru/man6/*.6*
 
 %files -f Northern_Sami.lang Northern_Sami
 %defattr(644,root,root,755)
@@ -1515,14 +1515,14 @@ check_installed_files
 
 %files -f Serbian.lang Serbian
 %defattr(644,root,root,755)
-%{_mandir}/sr/man1/*.1*
+#%{_mandir}/sr/man1/*.1*
 
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
-%{_mandir}/sv/man1/*.1*
-%{_mandir}/sv/man6/*.6*
-%{_mandir}/sv/man7/*.7*
-%{_mandir}/sv/man8/*.8*
+#%{_mandir}/sv/man1/*.1*
+#%{_mandir}/sv/man6/*.6*
+#%{_mandir}/sv/man7/*.7*
+#%{_mandir}/sv/man8/*.8*
 
 #%files -f Tamil.lang Tamil
 #%defattr(644,root,root,755)
@@ -1541,10 +1541,10 @@ check_installed_files
 
 %files -f Ukrainian.lang Ukrainian
 %defattr(644,root,root,755)
-%{_mandir}/uk/man1/*.1*
-%{_mandir}/uk/man6/*.6*
-%{_mandir}/uk/man7/*.7*
-%{_mandir}/uk/man8/*.8*
+#%{_mandir}/uk/man1/*.1*
+#%{_mandir}/uk/man6/*.6*
+#%{_mandir}/uk/man7/*.7*
+#%{_mandir}/uk/man8/*.8*
 
 %files -f Uzbek.lang Uzbek
 %defattr(644,root,root,755)
