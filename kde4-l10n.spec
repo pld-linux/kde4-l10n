@@ -18,7 +18,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde4-l10n
 Version:	4.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-bg-%{version}.tar.bz2
@@ -1029,7 +1029,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla języka zuluskiego.
 
 %prep
-%setup -qcT %(seq -f '-a %g' 0 42 |sed -e 's/-a 20//;s/-a 37//;s/-a 3//;s/-a 23//;/^$/d' | xargs)
+%setup -qcT %(seq -f '-a %g' 0 42 |sed -e 's/-a 20$//;s/-a 37$//;s/-a 3$//;s/-a 23$//;/^$/d' | xargs)
 
 %build
 for dir in kde-l10n-*-%{version}; do
