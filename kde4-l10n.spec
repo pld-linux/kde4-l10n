@@ -85,8 +85,8 @@ Source30:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-p
 # Source30-md5:	60ed4d9340e466ff7e5cc614b7960f23
 Source31:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pt-%{version}.tar.bz2
 # Source31-md5:	c04a97e8d87da90541b557785cf69305
-Source32:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pt_BR-%{version}.tar.bz2
 # Source32-md5:	dc2cde896b64ec6840a313ae70fe844b
+Source32:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pt_BR-%{version}.tar.bz2
 Source33:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ru-%{version}.tar.bz2
 # Source33-md5:	b4ebcbc2fb78f81a8289878f8ab0d1ad
 Source34:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-sl-%{version}.tar.bz2
@@ -109,6 +109,7 @@ Source42:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-z
 # Source42-md5:	b1a162f96fe278bf674377838c83f15c
 BuildRequires:	automoc4
 BuildRequires:	cmake
+BuildRequires:	docbook-dtd42-xml
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
 #BuildRequires:	libxml2-progs >= 2.4.2
