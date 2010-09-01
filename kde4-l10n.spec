@@ -1158,6 +1158,7 @@ FindLang() {
 }
 
 rm -f *.lang *.cache __find.* *.ok
+find $RPM_BUILD_ROOT -name \*sr@ijekavian\* |xargs rm -rf
 
 FindLang af > Afrikaans.lang
 FindLang ar > Arabic.lang
@@ -1319,7 +1320,7 @@ check_installed_files
 %files -f Danish.lang Danish
 %defattr(644,root,root,755)
 %{_mandir}/da/man1/*.1*
-%{_mandir}/da/man6/*.6*
+#%{_mandir}/da/man6/*.6*
 
 %files -f German.lang German
 %defattr(644,root,root,755)
@@ -1487,7 +1488,7 @@ check_installed_files
 %{_mandir}/pt/man1/*.1*
 %{_mandir}/pt/man6/*.6*
 %{_mandir}/pt/man7/*.7*
-#%{_mandir}/pt/man8/*.8*
+%{_mandir}/pt/man8/*.8*
 
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
 %defattr(644,root,root,755)
