@@ -17,96 +17,96 @@
 Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde4-l10n
-Version:	4.5.5
+Version:	4.6.0
 Release:	1
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-bg-%{version}.tar.bz2
-# Source0-md5:	865029fa043ec942a0be6af7eac51ef5
+# Source0-md5:	f0c3f48138d36f6f043fd0954d984117
 Source1:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ca-%{version}.tar.bz2
-# Source1-md5:	ddfff586b43a8faa3ab207cda3e3e070
+# Source1-md5:	46284bdc471d5fe712f1a52752de944d
 Source2:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-cs-%{version}.tar.bz2
-# Source2-md5:	53ed2aeccde65d164942a936f0db1206
+# Source2-md5:	124180e6f6b67a618454c3e360e7f3f6
 #Source3:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-csb-%{version}.tar.bz2
 # Source3-md5:	e2220f312309293efb6bdf9dbe9edc50
 Source4:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-da-%{version}.tar.bz2
-# Source4-md5:	54b2981b6996658a6fd4ea02fda54840
+# Source4-md5:	11402f7306b1881ca61fbef4596f0aeb
 Source5:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-de-%{version}.tar.bz2
-# Source5-md5:	e71a10d46f526e5441c817352318aced
+# Source5-md5:	973785f808ae7782e3e3005f1af9678a
 Source6:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-el-%{version}.tar.bz2
-# Source6-md5:	4f4fce12881f68f5ea15dc85bab5b469
+# Source6-md5:	f9f7b88b3cb3a672c04f1db731ad9589
 Source7:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-en_GB-%{version}.tar.bz2
-# Source7-md5:	6db541b467b7687b545da0e14c37d48e
+# Source7-md5:	397741924c9e6c25546e78b7f3524f3a
 Source8:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-es-%{version}.tar.bz2
-# Source8-md5:	149e9adbc3a9946765cf241c37e2da59
+# Source8-md5:	d0eae8c23b4c1771380d4fc9b8f8810e
 Source9:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-et-%{version}.tar.bz2
-# Source9-md5:	bb961356844675ccd35478b1312f7d15
+# Source9-md5:	e12023f0a5a3f5d0c7a7924c54205a6f
 Source10:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-fi-%{version}.tar.bz2
-# Source10-md5:	cc3d601eb8c5677fcde5705fe9621d0e
+# Source10-md5:	c8702b34ebe0b70f18de5496e6c27851
 Source11:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-fr-%{version}.tar.bz2
-# Source11-md5:	5bc39f313608a5fb893eeabd214de6a4
+# Source11-md5:	326af8f8312aa7a86fdff874bb2dcf4d
 Source12:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ga-%{version}.tar.bz2
-# Source12-md5:	7b18f7d6ad3ce44c9b9484806d8c26d1
+# Source12-md5:	2964fe672d3cf607d71ff9d674441e31
 Source13:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-gl-%{version}.tar.bz2
-# Source13-md5:	c1420d09e3b8a583efd43766ec91157c
+# Source13-md5:	45b17f227e7ae9b2f9e022606077b2fd
 Source14:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-hi-%{version}.tar.bz2
-# Source14-md5:	e08252bf8d56c139786adc01b1e365d2
+# Source14-md5:	0aa7b82203590c412ca52e7b5c874b19
 Source15:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-hu-%{version}.tar.bz2
-# Source15-md5:	cc77bc512074c7d1beb952932aeb5396
+# Source15-md5:	6744da4257637c8b93710bb20abb107f
 Source16:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-it-%{version}.tar.bz2
-# Source16-md5:	b306187d4e4468587cdbc78f030965fa
+# Source16-md5:	d8f6f09d318c68e881c12be4b872ccc7
 Source17:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ja-%{version}.tar.bz2
-# Source17-md5:	db2cb0714223ff141dfddee0737a8e0f
+# Source17-md5:	7a114af56bad89e9987b2eedea15e46e
 Source18:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-km-%{version}.tar.bz2
-# Source18-md5:	a655282f2007dd30e45ddbaecc98442c
+# Source18-md5:	f7941b57abfa39ed51f394e0db05d19f
 Source19:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ko-%{version}.tar.bz2
-# Source19-md5:	86baf4636f13480821931eaf7666d404
+# Source19-md5:	c10ac5492fae2f7f3553b62d2e3956ae
 #Source20:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ku-%{version}.tar.bz2
 # Source20-md5:	ea17565a2e891b91f40409125869b56f
 Source21:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-lt-%{version}.tar.bz2
-# Source21-md5:	ad5e75f3e7f12d67cf67cbe8897b9125
+# Source21-md5:	46426a974df1159ce8e204f88cea3a88
 Source22:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-lv-%{version}.tar.bz2
-# Source22-md5:	5ef135785b3de3b4c007985b6e776d54
+# Source22-md5:	1f6f6c9069c299fcde8abb51d6d71bcc
 #Source23:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-mk-%{version}.tar.bz2
 # Source23-md5:	769fd2bae0b8158a4fdac86e8c7979b3
-Source24:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ml-%{version}.tar.bz2
+#Source24:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ml-%{version}.tar.bz2
 # Source24-md5:	b67f645270c30d3dbbccbea505ac589e
 Source25:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-nb-%{version}.tar.bz2
-# Source25-md5:	200ab79588e3fa118b1dd757a30879d2
+# Source25-md5:	8d5f998a52b404ee42bd70d63890d6f5
 Source26:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-nds-%{version}.tar.bz2
-# Source26-md5:	ae83faa04c93087aec75bb5afc717cff
+# Source26-md5:	8526e6a3a1502ed96182482c40ba9b9e
 Source27:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-nl-%{version}.tar.bz2
-# Source27-md5:	489a073120c54223ee17283b31269b8a
+# Source27-md5:	1b49916be6f4d95423044a643baf36e5
 Source28:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-nn-%{version}.tar.bz2
-# Source28-md5:	1d1e9b2e65d015decc2c3a41461c1b42
+# Source28-md5:	c243b967bef30c3824f441871c0ae553
 Source29:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pa-%{version}.tar.bz2
-# Source29-md5:	db3b9ae3bf8d34430856a28562565b3c
+# Source29-md5:	a92292744e9d14f987e83f40e78f5835
 Source30:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pl-%{version}.tar.bz2
-# Source30-md5:	cd01c5007cd011ace83df8487cbd96d9
+# Source30-md5:	13f8e6ea1a9b0c333c447c6f174857c3
 Source31:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pt-%{version}.tar.bz2
-# Source31-md5:	db069f9917424724d2e28638a572278f
+# Source31-md5:	fe11fdfb43bc67a9b4ddae53264fe126
 Source32:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-pt_BR-%{version}.tar.bz2
-# Source32-md5:	3be0ce3b15f41e061850638d4aa496ec
+# Source32-md5:	1fa91b3f8fbf3c2e9f281b94da076b0d
 Source33:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-ru-%{version}.tar.bz2
-# Source33-md5:	7c31f812600b0d53fce7ec5a00e41fa5
+# Source33-md5:	8964934da9d14acdf09a314b22466857
 Source34:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-sl-%{version}.tar.bz2
-# Source34-md5:	434bad58cc0c87dab9e5611024c089c9
+# Source34-md5:	0372fcf339fea17705cd56367c5bef9c
 Source35:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-sr-%{version}.tar.bz2
-# Source35-md5:	eea9e63b20a3031f6d9910f9f71df67c
+# Source35-md5:	87af7a4484dc33cf5e8774607dea25bb
 Source36:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-sv-%{version}.tar.bz2
-# Source36-md5:	a2e70cf6816551b588a4ab48e5367018
+# Source36-md5:	adbb04da771a8ade83e98964b4e4056f
 #Source37:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-th-%{version}.tar.bz2
 # Source37-md5:	f9d8a82e12ac1100383a39669744de25
 Source38:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-tr-%{version}.tar.bz2
-# Source38-md5:	74511c22699c2fc2b529899e1304018a
+# Source38-md5:	c9791ce696ed019d4889297afdb4820b
 Source39:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-uk-%{version}.tar.bz2
-# Source39-md5:	d26f846e627a44e5703efa77efd27698
+# Source39-md5:	5486dae4ac8a41d0b446b8eed1a076c4
 Source40:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-wa-%{version}.tar.bz2
-# Source40-md5:	0e941061ec3341a9be1f72f17c3b0bc2
+# Source40-md5:	21327f5ed3ced2347940a8b88a7cfc61
 Source41:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-zh_CN-%{version}.tar.bz2
-# Source41-md5:	62018ee544b1d0d903efd7f6b41a366a
+# Source41-md5:	1eaad893003fe7e602fe218c2b71817f
 Source42:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-zh_TW-%{version}.tar.bz2
-# Source42-md5:	3507f00668734d05d8d6e62509b6aeac
+# Source42-md5:	11c8acc1789ebcee25606c23620ac67e
 BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	docbook-dtd42-xml
@@ -1030,7 +1030,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla języka zuluskiego.
 
 %prep
-%setup -qcT %(seq -f '-a %g' 0 42 |sed -e 's/-a 20$//;s/-a 37$//;s/-a 3$//;s/-a 23$//;/^$/d' | xargs)
+%setup -qcT %(seq -f '-a %g' 0 42 |sed -e 's/-a 20$//;s/-a 37$//;s/-a 3$//;s/-a 23$//;s/-a 24$//;/^$/d' | xargs)
 
 %build
 for dir in kde-l10n-*-%{version}; do
@@ -1367,7 +1367,6 @@ check_installed_files
 %defattr(644,root,root,755)
 %{_mandir}/fr/man1/*.1*
 %{_mandir}/fr/man6/*.6*
-%{_mandir}/fr/man8/*.8*
 
 #%files -f Frisian.lang Frisian
 #%defattr(644,root,root,755)
