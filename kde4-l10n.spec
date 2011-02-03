@@ -110,6 +110,7 @@ Source42:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-l10n/kde-l10n-z
 BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	docbook-dtd42-xml
+BuildRequires:	docbook-style-xsl
 BuildRequires:	gettext-devel
 BuildRequires:	kde4-kdelibs-devel
 #BuildRequires:	libxml2-progs >= 2.4.2
