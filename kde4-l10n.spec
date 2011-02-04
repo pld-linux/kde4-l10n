@@ -573,7 +573,7 @@ Summary:	K Desktop Environment - Kurdish language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka kurdyjskiego
 Group:		I18n
 
-%description Korean
+%description Kurdish
 K Desktop Environment - Kurdish language support.
 
 %description Kurdish -l pl.UTF-8
