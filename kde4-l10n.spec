@@ -246,7 +246,7 @@ Group:		I18n
 %description Kashubian
 K Desktop Environment - Kashubian language support.
 
-%description Kashubian -l pl.UTF-u
+%description Kashubian -l pl.UTF-8
 KDE - wsparcie dla języka kaszubskiego.
 
 %package Cymraeg
