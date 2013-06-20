@@ -4,7 +4,6 @@
 #   and then:r out in vim and ./builder -a5 the spec
 
 # TODO
-# - package new languages
 # - TOOOOOOOOONS of unpackaged files! NIGHTMARE
 # - move LC_SCRIPTS contents to LC_MESSAGES (but patch kde to search from there):
 #   /usr/share/locale/ga/LC_SCRIPTS/kdelibs4/kdelibs4.js
