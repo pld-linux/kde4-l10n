@@ -23,19 +23,19 @@ Release:	1
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-ar-%{version}.tar.xz
-# Source0-md5:	45d223fceb98c76c2012e59832940858
+# Source0-md5:	0a60d5463e19e0104c4c13306f986ee9
 Source1:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-bg-%{version}.tar.xz
-# Source1-md5:	97af5ae65eb4dde2edf91d56de2bd67a
+# Source1-md5:	424629d87086d4a921cd65af02bde923
 Source2:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-bs-%{version}.tar.xz
-# Source2-md5:	96d103e8b7cbd0a3c9c89bd93ba6c9a8
+# Source2-md5:	24c1e0bbd1d018865636fd91be898395
 Source3:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-ca-%{version}.tar.xz
-# Source3-md5:	db03ed298ee58011c9d6c6e97ed9e120
+# Source3-md5:	f6d939480823a62dcc85264998c0de32
 Source4:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-ca@valencia-%{version}.tar.xz
-# Source4-md5:	543b69f2642afc78a23e14c77d1254f1
+# Source4-md5:	e9b9295c0532a9450f92d278714522dd
 Source5:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-cs-%{version}.tar.xz
-# Source5-md5:	0edf5dd0872a3e923f57b684df0dd22c
+# Source5-md5:	abed151a4c9fb75c95e4a6aba40f6221
 Source6:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-da-%{version}.tar.xz
-# Source6-md5:	ff272cb988d38ff15e4b498ec8cd1e60
+# Source6-md5:	3b3538697e37af0985a58c7c656fcef7
 Source7:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-de-%{version}.tar.xz
 # Source7-md5:	b834646e3956e082bcf22add32a36fc3
 Source8:	ftp://ftp.kde.org/pub/kde/stable/4.12.0/src/kde-l10n/kde-l10n-el-%{version}.tar.xz
@@ -132,7 +132,7 @@ BuildRequires:	cmake
 BuildRequires:	docbook-dtd42-xml
 BuildRequires:	docbook-style-xsl
 BuildRequires:	gettext-devel
-BuildRequires:	kde4-kdelibs-devel
+BuildRequires:	kde4-kdelibs-devel >= %{version}
 #BuildRequires:	libxml2-progs >= 2.4.2
 BuildRequires:	perl-modules
 BuildRequires:	qt4-build
