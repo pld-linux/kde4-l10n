@@ -129,7 +129,7 @@ BuildRequires:	automoc4
 BuildRequires:	cmake
 BuildRequires:	docbook-dtd42-xml
 BuildRequires:	docbook-style-xsl
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 #BuildRequires:	libxml2-progs >= 2.4.2
 BuildRequires:	perl-modules
